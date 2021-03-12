@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+#box {
+  display: flex;
+  text-align: center;
+}
+#digital {
+  width: 700px;
+  height: 100px;
+  line-height: 50px;
+  background: yellowgreen;
+  border-radius: 50px;
+  font-size: 30px;
+}
+.digital_btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: none;
+  font-size: 20px;
+  background: #ddd;
+}

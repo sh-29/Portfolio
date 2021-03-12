@@ -1,0 +1,528 @@
+section {
+  width: 100%;
+  height: 3000px;
+}
+
+section aside {
+  width: 200px;
+  float: left;
+  margin-top: 20px;
+}
+
+aside .side_menu {
+  width: 170px;
+  height: 100%;
+}
+
+aside .side_menu dl {
+  width: 100%;
+  height: 100%;
+}
+
+aside .side_menu dl dt {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  background: #2b2b2b;
+}
+
+aside .side_menu dl dt b {
+  color: #ddd;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+aside .side_menu dl dd {
+  width: 168px;
+  height: 40px;
+  background: #efefef;
+  border: 1px solid #ccc;
+  border-top: none;
+  margin-top: 1px;
+}
+
+aside .side_menu dl dd a {
+  color: #2b2b2b;
+  font-size: 14px;
+  padding-left: 10px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+
+aside .side_menu dl dd a:hover {
+  text-decoration: underline;
+}
+
+aside .side_menu dl dd.pick {
+  background: #7d010b;
+  border: none;
+  width: 170px;
+}
+
+aside .side_menu dl dd.pick a {
+  color: #eee;
+}
+
+/* 
+
+*/
+section #container {
+  width: 1000px;
+  float: left;
+  background: #fff;
+  margin-top: 20px;
+}
+
+#container .content01 {
+  width: 1000px;
+  height: 650px;
+  position: relative;
+}
+
+#container .content01 > p {
+  width: 980px;
+  height: 45px;
+  line-height: 45px;
+  background: #efefef;
+  text-align: right;
+  font-size: 13px;
+  color: #7d010b;
+  padding-right: 20px;
+}
+
+#container .content01 > p > a {
+  padding-right: 20px;
+  color: #2b2b2b;
+}
+
+#container .content01 > p > a:hover {
+  text-decoration: underline;
+}
+
+#container .content01 h3 {
+  height: 90px;
+  line-height: 100px;
+  font-size: 26px;
+  background: url(../img/step01.png) no-repeat;
+  background-position-y: 28px;
+  padding-left: 130px;
+}
+
+#container .content01 .guide {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+#container .content01 .guide > p {
+  width: 100%;
+  height: 135px;
+  background: url(../img/zin-banner_step01_20201210__2.png) no-repeat;
+  background-size: cover;
+}
+
+#container .content01 .guide h4 {
+  height: 70px;
+  line-height: 70px;
+  font-size: 18px;
+  padding-left: 50px;
+}
+
+#container .content01 .guide ul.process {
+  width: 100%;
+  height: 220px;
+  border-bottom: 1px solid #ddd;
+}
+#container .content01 .guide ul.process li {
+  float: left;
+  width: 249px;
+  height: 170px;
+  text-align: center;
+  border-right: 1px solid #ddd;
+}
+#container .content01 .guide ul.process li b {
+  width: 100%;
+  height: 50px;
+  display: block;
+  margin-top: 130px;
+  font-size: 15px;
+}
+#container .content01 .guide ul.process li:nth-child(1) {
+  background: url(../img/step01_01.png) no-repeat;
+  background-position-x: center;
+}
+#container .content01 .guide ul.process li:nth-child(2) {
+  background: url(../img/step01_02.png) no-repeat;
+  background-position-x: center;
+}
+#container .content01 .guide ul.process li:nth-child(3) {
+  background: url(../img/step01_04.png) no-repeat;
+  background-position-x: center;
+}
+#container .content01 .guide ul.process li:nth-child(4) {
+  background: url(../img/step01_03.png) no-repeat;
+  background-position-x: center;
+  border-right: 0px;
+}
+#container .content01 .guide .bottom {
+  width: 100%;
+  height: 80px;
+}
+#container .content01 .guide .bottom p:nth-child(1) {
+  width: 100px;
+  height: 80px;
+  background: url(../img/call.JPG) no-repeat;
+  float: left;
+  margin-left: 50px;
+  margin-top: 12px;
+}
+#container .content01 .guide .bottom p {
+  font-size: 13px;
+  line-height: 22px;
+  color: #777;
+  float: left;
+  margin-top: 16px;
+}
+#container .content01 .text_box {
+  width: 350px;
+  height: 70px;
+  background: url(../img/step03_info_20201210.png) no-repeat;
+  position: absolute;
+  top: 250px;
+  right: -60px;
+}
+/* 
+
+*/
+#container .content02 {
+  width: 1000px;
+}
+.content02 > .title {
+  width: 100%;
+  height: 60px;
+  float: left;
+  position: relative;
+  border-bottom: 2px solid #7d010b;
+}
+.content02 > .title p {
+  width: 300px;
+  float: left;
+  color: #7d010b;
+  position: absolute;
+  bottom: 10px;
+  font-weight: bold;
+}
+.content02 > .title small {
+  width: 700px;
+  float: left;
+  text-align: right;
+  color: red;
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* 정보입력-1공사범위 */
+.content02 .information label {
+  color: #545454;
+}
+.content02 .information select {
+  color: #545454;
+}
+
+.content02 .information .top fieldset {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding-top: 25px;
+}
+.content02 .information .top fieldset:nth-child(1) {
+  height: 140px;
+}
+.content02 .information .top fieldset h4 {
+  width: 150px;
+  height: 90px;
+  float: left;
+  margin: -5px 10px;
+  color: #333333;
+}
+.content02 .information .top fieldset h4 sup {
+  color: #7d010b;
+  font-size: 20px;
+}
+.content02 .information .top fieldset p {
+  float: left;
+  font-size: 14.5px;
+}
+.content02 .information .top fieldset:nth-child(1) p {
+  border-right: 1px solid #ddd;
+  height: 90px;
+  width: 150px;
+  margin-right: 40px;
+}
+.content02 .information .top fieldset label {
+  position: relative;
+  top: -7px;
+  padding-right: 25px;
+}
+.content02 .information .top fieldset:nth-child(1) span {
+  height: 10px;
+  line-height: 10px;
+  font-size: 14.5px;
+}
+.content02 .information .top fieldset small {
+  font-size: 12px;
+  color: #777;
+  display: block;
+  width: 800px;
+  height: 20px;
+  display: block;
+}
+.content02 .information .top fieldset:nth-child(1) small {
+  margin: 26px 170px;
+}
+
+/* 정보입력-2이름 */
+.content02 .information .top fieldset:nth-child(2) {
+  height: 55px;
+}
+.content02 .information .top fieldset p {
+  width: 800px;
+}
+.content02 .information .top fieldset input {
+  border: 1px solid #eee;
+  border-top: 1px solid #ccc;
+  background: #fafafa;
+  height: 26px;
+}
+.content02 .information .top fieldset:nth-child(2) input[id='name'] {
+  width: 200px;
+}
+::placeholder {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+/* 정보입력-3전화번호 */
+.content02 .information .top fieldset:nth-child(3) {
+  height: 100px;
+}
+.content02 .information .top fieldset:nth-child(3) p {
+  height: 90px;
+  width: 400px;
+  padding-top: 20px;
+}
+.content02 .information .top fieldset:nth-child(3) input {
+  width: 80px;
+}
+.content02 .information .top fieldset:nth-child(3) input[type='submit'] {
+  width: 82px;
+  height: 28px;
+  border: none;
+  background: #666;
+  color: #eee;
+  margin-left: 5px;
+}
+.content02 .information .top fieldset:nth-child(3) small {
+  width: 400px;
+  height: 100px;
+  line-height: 18px;
+  float: left;
+}
+.content02 .information .top fieldset:nth-child(3) small b {
+  color: #7d010b;
+}
+
+/* 정보입력-4이메일 */
+.content02 .information .top fieldset:nth-child(4) {
+  height: 55px;
+}
+.content02 .information .top select {
+  border: 1px solid #eee;
+  border-top: 1px solid #ccc;
+  background: #fafafa;
+  width: 120px;
+  height: 28px;
+  margin-left: 5px;
+}
+
+/* 정보입력-5현장주소 */
+.content02 .information .top fieldset.address {
+  height: 80px;
+}
+
+.content02 .information .top fieldset.address input {
+  margin-left: 5px;
+  width: 500px;
+}
+.content02 .information .top fieldset.address small {
+  width: 800px;
+  height: 20px;
+  margin-top: 50px;
+}
+/* 정보입력-6주거형태 */
+.content02 .information .top fieldset.home_shape {
+  height: 55px;
+}
+.content02 .information .top fieldset.home_shape input[type='text'] {
+  width: 250px;
+  vertical-align: top;
+}
+.content02 .information .top fieldset.home_shape label[for='etc2'] {
+  padding-right: 5px;
+}
+/* 정보입력-7짐 이동 필요 여부 */
+.content02 .information .top fieldset.move {
+  height: 70px;
+}
+.content02 .information .top fieldset.move small {
+  margin-top: 50px;
+}
+/* 정보입력-8평형대 */
+.content02 .information .top fieldset.scale {
+  height: 55px;
+}
+.content02 .information .top fieldset.scale input {
+  width: 100px;
+  vertical-align: middle;
+}
+.content02 .information .top fieldset.scale p {
+  color: #545454;
+}
+/* 정보입력-9공사 예정기간 */
+.content02 .information .top fieldset.schedule {
+  height: 120px;
+}
+
+.content02 .information .top fieldset.schedule h4 {
+  height: 150px;
+}
+.content02 .information .top fieldset.schedule p {
+  color: #545454;
+}
+.content02 .information .top fieldset.schedule small {
+  margin-top: 50px;
+}
+/* 정보입력-10총 공사예산 */
+.content02 .information .top fieldset.budget small {
+  margin-top: 55px;
+}
+/* 정보입력-11LG지인사이트 방문 경로 */
+.content02 .information .top fieldset.gin_site_route {
+  height: 140px;
+}
+.content02 .information .top fieldset.gin_site_route input[type='text'] {
+  width: 200px;
+  vertical-align: bottom;
+}
+.content02 .information .top fieldset.gin_site_route label[for='upMembership'] {
+  padding-right: 5px;
+}
+.content02 .information .top fieldset.gin_site_route label[for='etc'] {
+  padding-right: 5px;
+}
+/* 정보입력-12메모 */
+.content02 .information .top fieldset.memo {
+  height: 150px;
+}
+.content02 .information .top fieldset.memo input {
+  width: 770px;
+  height: 120px;
+}
+/* 
+
+*/
+#container .content02 .information .middle fieldset {
+  border: none;
+}
+.information .middle fieldset p {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  background: #f9f9f9f9;
+}
+/* 
+
+*/
+.content02 .information .btn fieldset {
+  height: 145px;
+  position: relative;
+  border: none;
+  padding-top: 25px;
+}
+.content02 .information .btn fieldset:last-child {
+  border-bottom: 1px solid #999;
+  height: 70px;
+}
+
+.content02 .information .btn fieldset h4 {
+  width: 150px;
+  height: 90px;
+  float: left;
+  margin: -5px 10px;
+  color: #333333;
+}
+.content02 .information .btn fieldset h4 sup {
+  color: #7d010b;
+  font-size: 20px;
+}
+.content02 .information .btn fieldset label {
+  position: relative;
+  top: -7px;
+  padding-right: 25px;
+}
+.content02 .information .btn fieldset p {
+  border: 1px solid #eee;
+  border-top: 1px solid #ccc;
+  background: #fafafa;
+  height: 100px;
+  width: 770px;
+  overflow: scroll;
+  overflow-x: hidden;
+  float: left;
+  font-size: 14.5px;
+  color: #545454;
+}
+.content02 .information .btn fieldset div {
+  width: 500px;
+  height: 30px;
+  position: absolute;
+  top: 140px;
+  left: 170px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.content02 .information .btn fieldset:last-child div {
+  width: 770px;
+  position: absolute;
+  top: 30px;
+  font-size: 15px;
+  line-height: 22px;
+}
+/* 
+
+*/
+.content02 .bottom_text {
+  width: 1000px;
+  height: 80px;
+  line-height: 94px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #222222;
+}
+.content02 > button {
+  width: 120px;
+  height: 45px;
+  background: #2b2b2b;
+  border: none;
+  color: #fefefe;
+  font-size: 18px;
+  position: relative;
+  left: 440px;
+  cursor: pointer;
+}

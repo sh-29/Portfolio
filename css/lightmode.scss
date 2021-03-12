@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import '_var';
+
+#main .lightmode {
+  //main:133
+  background: linear-gradient(#fff, #ccc);
+  color: #222;
+}
+#main .back_222 {
+  background: #222 !important;
+}
+#main .color_222 {
+  color: #222;
+}
+#aP2 .img_box li b.color_ccc {
+  color: #ccc;
+}
+#main .color_yellow {
+  color: $yellow;
+}
+#main .color_point {
+  color: $point;
+}
+#aP2 .toggle_box .cnt .filter_gray {
+  filter: invert(75%);
+}

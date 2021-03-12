@@ -1,0 +1,190 @@
+/* 여기부터 아이콘 */
+section > .icon_all {
+  width: 100%;
+  height: 250px;
+  /* background: #fff111; */
+  position: relative;
+  overflow: hidden;
+}
+.icon_all h2 {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+}
+.icon_all ul {
+  width: 1040px;
+  height: 150px;
+  /* background: tomato; */
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+.icon_all ul li {
+  float: left;
+  margin-right: 31px;
+}
+.icon_all ul li:last-child {
+  margin-right: 0px;
+}
+.icon_all ul.two {
+  left: 1040px;
+}
+.icon_all > div {
+  width: 80px;
+  height: 50px;
+  /* background: red; */
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+.icon_all > div > button {
+  border: none;
+  float: left;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  background: none;
+}
+
+/* 여기부터 배너 */
+div.section_sliderbannenr {
+  background: url("../images/sec_silderbanner/pml_14je28luwjnn.jpg") no-repeat;
+}
+div.section_sliderbannenr > ul.button {
+  width: 1040px;
+  position: relative;
+  top: 45px;
+}
+div.section_sliderbannenr > ul.button > li:first-child {
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+div.section_sliderbannenr > ul.button > li:last-child {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+div.section_sliderbannenr > ul.button > li > button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: none;
+  font: normal 30px "굴림";
+  color: #fff;
+}
+
+/* 여기부터 그리드카드 */
+.grid_card > ul {
+  /* background: green; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+.grid_card > ul > li {
+  background: red;
+}
+
+/* 여기부터 그리드카드 텍스트 */
+.grid_card > ul > li ul.text {
+  padding-top: 240px;
+  font-size: 12px;
+}
+.grid_card > ul > li ul.text > li:nth-child(2) {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.grid_card > ul > li ul.text > li:nth-child(2) p {
+  width: 70px;
+  color: tomato;
+  float: left;
+}
+.grid_card > ul > li ul.text > li:nth-child(2) del {
+  color: #999999;
+}
+.grid_card > ul > li ul.text > li:nth-child(3) p {
+  width: 36px;
+  color: tomato;
+  float: left;
+}
+.grid_card > ul > li ul.text > li:nth-child(3) {
+  font-size: 18px;
+  font-weight: bold;
+}
+.grid_card > ul > li ul.text > li:nth-child(4) {
+  margin-top: 8px;
+}
+.grid_card > ul > li ul.text > li:nth-child(4) p {
+  color: #e7bd00;
+  width: 60px;
+  float: left;
+}
+.grid_card > ul > li ul.text > li:nth-child(4) span {
+  color: #999999;
+  float: left;
+}
+.grid_card > ul > li ul.text > li:nth-child(5) {
+  color: #999999;
+  float: right;
+}
+.grid_card > ul > li ul.text > li:nth-child(6) {
+  /* background: red; */
+  padding-top: 20px;
+}
+.grid_card > ul > li ul.text > li:nth-child(6) p {
+  padding-top: 5px;
+  color: #999999;
+}
+
+/* 여기부터 그리드카드 이미지 */
+.grid_card > ul > li:nth-child(1) {
+  background: url(../images/section_grid/603323049_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(2) {
+  background: url(../images/section_grid/607876686_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(3) {
+  background: url(../images/section_grid/603380036_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(4) {
+  background: url(../images/section_grid/604595026_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(5) {
+  background: url(../images/section_grid/605203671_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(6) {
+  background: url(../images/section_grid/606122016_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(7) {
+  background: url(../images/section_grid/606704722_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(8) {
+  background: url(../images/section_grid/607410079_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(9) {
+  background: url(../images/section_grid/607451797_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(10) {
+  background: url(../images/section_grid/607876686_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(11) {
+  background: url(../images/section_grid/607907217_medium.jpg) no-repeat;
+  background-size: contain;
+}
+.grid_card > ul > li:nth-child(12) {
+  background: url(../images/section_grid/603317144_medium.jpg) no-repeat;
+  background-size: contain;
+}

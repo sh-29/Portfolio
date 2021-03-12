@@ -1,0 +1,23 @@
+#main .lightmode {
+  background: linear-gradient(#fff, #ccc);
+  color: #222; }
+
+#main .back_222 {
+  background: #222 !important; }
+
+#main .color_222 {
+  color: #222; }
+
+#aP2 .img_box li b.color_ccc {
+  color: #ccc; }
+
+#main .color_yellow {
+  color: #f3df4d; }
+
+#main .color_point {
+  color: #3664e8; }
+
+#aP2 .toggle_box .cnt .filter_gray {
+  filter: invert(75%); }
+
+/*# sourceMappingURL=lightmode.css.map */

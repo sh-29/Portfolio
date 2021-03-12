@@ -1,0 +1,238 @@
+@charset "utf-8";
+@import '_var', '_function';
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900);
+
+body {
+  word-break: keep-all;
+  // overflow: hidden;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* position: fixed;
+  bottom: 0vh; */
+  overflow: hidden;
+  .tit,
+  .a_panel {
+    height: 100vh;
+    float: left;
+    position: relative;
+  }
+  .a_panel {
+    display: none;
+    width: 0;
+    background: linear-gradient(15deg, #1d1d1d, #333 80%, #66603c);
+  }
+  .tit {
+    width: vw1920(60);
+    border-left: 2px solid #000;
+
+    &.on button {
+      color: $yellow;
+      font-weight: 700;
+      &.color_b {
+        color: $point;
+      }
+    }
+    &.last_tit {
+      border-right: none;
+      &.on button {
+        background: #6c663b;
+      }
+    }
+    button {
+      color: #000;
+      width: 100vh;
+      height: vw1920(60);
+      transform: rotate(-90deg);
+      transform-origin: 50vh 50vh;
+      text-align: right;
+      padding-right: vw1920(26);
+      font-size: vw1920(28);
+      line-height: 3.4;
+      font-family: 'Noto Sans KR';
+      &:hover,
+      &:focus {
+        color: $yellow;
+      }
+    }
+  }
+
+  .main_back {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(13deg, #1d1d1d, #333 75%, #66603c);
+    b {
+      display: block;
+      width: 70%;
+      margin: vw1920(100) auto;
+      font-size: vw1920(170);
+      font-weight: 600;
+      text-align: center;
+    }
+    .txt_box {
+      position: absolute;
+      bottom: vw1920(40);
+      left: vw1920(22);
+      color: #666;
+      width: vw1920(280);
+      p {
+        font-size: vw1920(20);
+        font-weight: 600;
+        padding-bottom: vw1920(22);
+        line-height: 1.5;
+      }
+      span {
+        display: inline-block;
+        font-size: vw1920(17);
+        text-align: right;
+        width: 95%;
+      }
+    }
+  }
+  // 처음 인덱스로 가는 버튼, 테마변경 버튼
+  #home_btn,
+  #mode {
+    position: absolute;
+    bottom: vw1920(100);
+    right: vw1920(10);
+    height: vw1920(40);
+    font-family: 'Noto Sans KR';
+    z-index: 998;
+    transform: rotate(-90deg);
+    color: #000;
+    &.yellow {
+      color: $yellow;
+    }
+    i {
+      font-size: vw1920(180);
+      animation: homeBtn 5s linear infinite;
+    }
+    @keyframes homeBtn {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    // 호버시 애니메이션 반대로 회전
+    @keyframes homeBtn2 {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+    span {
+      font-size: vw1920(24);
+      visibility: hidden;
+      padding-left: vw1920(10);
+      display: inline-block;
+    }
+  }
+  // 처음 인덱스로 가는 버튼 호버 제어
+  #home_btn,
+  #mode {
+    &:hover,
+    &:focus {
+      color: $point;
+    }
+    &:hover span,
+    &:focus span {
+      visibility: visible;
+    }
+    &:hover i,
+    &:focus i {
+      animation: homeBtn2 5s linear infinite;
+    }
+  }
+  #home_btn {
+    span {
+      position: absolute;
+      top: vw1920(40);
+      left: vw1920(160);
+    }
+  }
+  //모드변경 버튼만 다른 요소
+  #mode {
+    bottom: vw1920(250);
+    right: vw1920(70);
+    i {
+      font-size: vw1920(55);
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  #main {
+    .a_panel {
+      position: absolute;
+      z-index: 1;
+      background: linear-gradient(#333, #1d1d1d);
+    }
+    .tit {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      width: 0;
+      height: 10vh;
+      border-left: none;
+      button {
+        width: inherit;
+        transform: rotate(0deg);
+        transform-origin: 0 0;
+        padding-right: 0;
+        font-size: vw1080(20);
+        line-height: 1;
+      }
+    }
+    #aH1 {
+      margin-left: vw1080(15);
+    }
+    #aH2 {
+      margin-left: vw1080(185);
+    }
+    #aH3 {
+      margin-left: vw1080(280);
+    }
+    #aH4 {
+      margin-left: vw1080(400);
+    }
+    #aH5 {
+      margin-left: vw1080(610);
+    }
+    .main_back {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    .tit {
+      height: 10vh;
+      button {
+        font-size: vw768(20);
+      }
+    }
+    #aH1 {
+      margin-left: vw768(15);
+    }
+    #aH2 {
+      margin-left: vw768(185);
+    }
+    #aH3 {
+      margin-left: vw768(280);
+    }
+    #aH4 {
+      margin-left: vw768(400);
+    }
+    #aH5 {
+      margin-left: vw768(610);
+    }
+  }
+}
