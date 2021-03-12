@@ -58,9 +58,9 @@ body {
     #main .main_back .txt_box {
       position: absolute;
       bottom: 2.0833333333vw;
-      left: 1.1458333333vw;
+      left: 0.8333333333vw;
       color: #666;
-      width: 14.5833333333vw; }
+      width: 12.5vw; }
       #main .main_back .txt_box p {
         font-size: 1.0416666667vw;
         font-weight: 600;
