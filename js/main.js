@@ -119,7 +119,7 @@ $(document).ready(function(){
   var _aP4Move = $('#aP4 .cnt_list');
 
   _nextBtn.on('click',function(){
-    _aP4Move.stop().animate({left:'-76%'},1000);
+    _aP4Move.stop().animate({left:'-95%'},1000);
   },
   );
   _prevBtn.on('click',function(){

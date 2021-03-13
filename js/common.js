@@ -161,6 +161,8 @@ $(document).ready(function(){
     var _panel3_txt = $('#aP3 .txt_box');
     _panel3_txt.toggleClass('color_222 default_c');
     
+    // 패널4 제어
+    $('#aP4 .cnt_list li button').toggleClass('color_222');
     //패널5 제어
     var _panel5 = $('#aP5');
     _panel5.find('.front').toggleClass('filter');
