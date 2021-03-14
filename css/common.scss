@@ -56,6 +56,7 @@ button {
     font-weight: 700;
   }
 }
+// 마우스 따라다니는 제어
 #cursor_follow {
   position: absolute;
   z-index: 999;
@@ -71,6 +72,9 @@ button {
   }
   p {
     display: none;
+    .fas, span{
+      color:$point;
+    }
     &.block {
       display: block;
     }

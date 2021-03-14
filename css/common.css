@@ -64,6 +64,8 @@ button {
     display: none !important; }
   #cursor_follow p {
     display: none; }
+    #cursor_follow p .fas, #cursor_follow p span {
+      color: #3664e8; }
     #cursor_follow p.block {
       display: block; }
 
