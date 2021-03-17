@@ -123,7 +123,7 @@ $(document).ready(function(){
 
   _nextBtn.on('click',function(){
     _aP4Move.stop().animate({left:'-90%'},1000);
-  },
+  }
   );
   _prevBtn.on('click',function(){
     _aP4Move.stop().animate({left:0},1000)

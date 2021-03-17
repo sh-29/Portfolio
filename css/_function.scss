@@ -9,6 +9,6 @@
 }
 
 @function vw768($px) {
-  $wv768: $px / 7.68;
-  @return #{wv768}vw;
+  $vw768: $px / 7.68;
+  @return #{$vw768}vw;
 }

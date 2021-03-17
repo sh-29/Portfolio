@@ -13,20 +13,21 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-  .click_txt p {
+  .click_txt b {
+    display: inline-block;
     z-index: 100;
     color: #3664e8;
     animation: clickTxtAni 1s infinite;
     padding-right: 0.1041666667vw; }
-    .click_txt p:nth-child(1) {
+    .click_txt b:nth-child(1) {
       animation-delay: 0s; }
-    .click_txt p:nth-child(2) {
+    .click_txt b:nth-child(2) {
       animation-delay: 0.2s; }
-    .click_txt p:nth-child(3) {
+    .click_txt b:nth-child(3) {
       animation-delay: 0.4s; }
-    .click_txt p:nth-child(4) {
+    .click_txt b:nth-child(4) {
       animation-delay: 0.6s; }
-    .click_txt p:nth-child(4) {
+    .click_txt b:nth-child(4) {
       animation-delay: 0.8s; }
 @keyframes clickTxtAni {
   0% {
@@ -656,7 +657,8 @@
       float: left; }
       #aP4 .cnt_list li iframe {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        border: none; }
       #aP4 .cnt_list li:nth-child(1) {
         margin-top: 8.3333333333vw;
         margin-left: 1.0416666667vw;
@@ -760,7 +762,8 @@
     .panel4_md .cnt_box iframe {
       position: absolute;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      border: none; }
   .panel4_md .md_close_btn {
     top: 0vw;
     right: 0vw; }

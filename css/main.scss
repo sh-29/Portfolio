@@ -20,7 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  p {
+  b {
+    display: inline-block;
     z-index: 100;
     color: $point;
     animation: clickTxtAni 1s infinite;
@@ -842,6 +843,7 @@
       iframe {
         width: 100%;
         height: 100%;
+        border: none;
       }
       &:nth-child(1) {
         //애니메이션종합
@@ -981,6 +983,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      border: none;
     }
   }
   // .md_close_btn{} -> 180번 줄에서 공통제어

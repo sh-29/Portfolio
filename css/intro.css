@@ -26,7 +26,8 @@
     transform: translate(-50%, -50%); }
     .intro .intro_wrap .move,
     .intro .intro_wrap .light,
-    .intro .intro_wrap #loadingBox {
+    .intro .intro_wrap #loadingBox,
+    .intro .intro_wrap #loadingBox_m {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -38,23 +39,26 @@
       height: 2.6041666667vw;
       background: radial-gradient(#f3df4d 1%, #918423 20%, transparent 60%);
       transition: all 0.5s; }
-    .intro .intro_wrap #loadingBox {
+    .intro .intro_wrap #loadingBox,
+    .intro .intro_wrap #loadingBox_m {
       width: 3.125vw;
       height: 7.8125vw;
       flex-direction: column;
       margin-top: -0.9375vw; }
-      .intro .intro_wrap #loadingBox p {
+      .intro .intro_wrap #loadingBox p,
+      .intro .intro_wrap #loadingBox_m p {
         text-align: center;
         padding-bottom: 0.5208333333vw;
         color: #fff;
         font-size: 1.0416666667vw; }
-      .intro .intro_wrap #loadingBox .icon {
+      .intro .intro_wrap #loadingBox .icon,
+      .intro .intro_wrap #loadingBox_m .icon {
         width: 3.125vw;
         height: 6.25vw;
         background: url("../images/common/electric_bulb_white.png") no-repeat center bottom;
-        background-size: contain;
-        position: cover; }
-      .intro .intro_wrap #loadingBox .num {
+        background-size: contain; }
+      .intro .intro_wrap #loadingBox .num,
+      .intro .intro_wrap #loadingBox_m .num {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -147,18 +151,21 @@
       background: radial-gradient(#f3df4d 1%, #918423 20%, transparent 60%);
       transition: all 0.5s;
       z-index: 10; }
-    #mIntro #loadingBox {
+    #mIntro #loadingBox,
+    #mIntro #loadingBox_m {
       width: 5.5555555556vw;
       height: 13.8888888889vw;
       flex-direction: column;
       margin-top: 0;
       z-index: 11; }
-      #mIntro #loadingBox p {
+      #mIntro #loadingBox p,
+      #mIntro #loadingBox_m p {
         text-align: center;
         padding-bottom: 0.9259259259vw;
         color: #fff;
         font-size: 1.8518518519vw; }
-      #mIntro #loadingBox img {
+      #mIntro #loadingBox img,
+      #mIntro #loadingBox_m img {
         width: 5.5555555556vw;
         max-width: 100%; }
     #mIntro h1,

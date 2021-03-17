@@ -31,7 +31,8 @@
 
     .move,
     .light,
-    #loadingBox {
+    #loadingBox,
+    #loadingBox_m {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -46,7 +47,8 @@
       // border: 1px solid red;
       transition: all 0.5s;
     }
-    #loadingBox {
+    #loadingBox,
+    #loadingBox_m {
       width: vw1920(60);
       height: vw1920(150);
       // border: 1px solid green;
@@ -65,7 +67,6 @@
         background: url('../images/common/electric_bulb_white.png') no-repeat
           center bottom;
         background-size: contain;
-        position: cover;
       }
       .num {
         // border: 1px solid red;
@@ -186,7 +187,8 @@
       z-index: 10;
       // margin-top: vw1920(50);
     }
-    #loadingBox {
+    #loadingBox,
+    #loadingBox_m {
       width: vw1080(60);
       height: vw1080(150);
       // border: 1px solid green;

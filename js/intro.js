@@ -37,7 +37,7 @@ $(document).ready(function () {
     4000,
     'easeInOutSine',
     function () {
-      $('#loadNum').parent().text('ON');
+      $('#loadNum_m').parent().text('ON');
     }
   );
 
@@ -46,7 +46,7 @@ $(document).ready(function () {
   var loadNum = 0;
   var loading = setInterval(function () {
     loadNum++;
-    $(' #loadNum').text(loadNum);
+    $(' #loadNum, #loadNum_m').text(loadNum);
     if (loadNum === 100) clearInterval(loading);
   }, 35);
 
