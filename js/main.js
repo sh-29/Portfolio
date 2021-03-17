@@ -97,18 +97,21 @@ $(document).ready(function(){
       $('#cursor_follow').find('p').removeClass('block');
   });
 
-  // view more 제어
+  // view more 버튼 제어
   // 초기값 안보이게 제어
   // $('#aP3 .more_btn').next().css('display','none');
   $('#aP3 .more_btn').on('click',function () {
     $(this).next().slideDown();
+    $(this).parent().animate({top:'-5.8vw'});
   });
   $('#aP3 .arrow_box button').on('click',function(){
     $('#aP3 .more_cnt').slideUp();
+    $('#aP3 .slide .txt_box').animate({top:'0'});
   });
   // 동적생성 요소 위와 같은 view more 제어
   $(document).on('click','#aP3 .more_btn',function () {
     $(this).next().slideDown();
+    $(this).parent().animate({top:'-5.8vw'});
   });
 
 
@@ -119,7 +122,7 @@ $(document).ready(function(){
   var _aP4Move = $('#aP4 .cnt_list');
 
   _nextBtn.on('click',function(){
-    _aP4Move.stop().animate({left:'-95%'},1000);
+    _aP4Move.stop().animate({left:'-90%'},1000);
   },
   );
   _prevBtn.on('click',function(){

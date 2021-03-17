@@ -160,7 +160,7 @@ $(document).ready(function(){
     // 패널3 제어
     var _panel3_txt = $('#aP3 .txt_box');
     _panel3_txt.toggleClass('color_222 default_c');
-    
+    _panel3_txt.find('.more_cnt').toggleClass('color_point');
     // 패널4 제어
     $('#aP4 .cnt_list li button').toggleClass('color_222');
     //패널5 제어

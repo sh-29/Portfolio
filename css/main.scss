@@ -203,8 +203,8 @@
 }
 
 .txt_wrap {
-  background: #000;
-  color: $fontW;
+  background: $yellow;
+  color: #222;
   position: absolute;
   top: 0;
   left: 0;
@@ -219,17 +219,18 @@
     h4 {
       padding-top: vw1920(30);
       font-size: vw1920(48);
-      color: $yellow;
+      color: #222;
     }
     strong {
       font-size: vw1920(30);
-      color: $yellow;
+      color: #222;
       font-weight: normal;
     }
     p {
       padding-top: vw1920(50);
       font-size: vw1920(24);
       line-height: 1.6;
+      font-weight: bold;
     }
   }
 }
@@ -322,7 +323,7 @@
 #dim {
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 998;
 }
@@ -590,7 +591,7 @@
   }
 }
 
-// 패널3 코딩작업물
+// 패널3 작업물
 #aP3 {
   position: relative;
   .container {
@@ -601,7 +602,7 @@
     transform: translate(0, -50%);
   }
   .slide_view {
-    width: vw1920(1370);
+    width: vw1920(1400);
     height: 100%;
     position: absolute;
     top: vw1920(-320);
@@ -616,7 +617,6 @@
         width: 100%;
         height: vw1920(480);
         margin-bottom: vw1920(70);
-        font-size: 100px;
         transition: all 0.3s;
         transform-origin: right;
         right: vw1920(-100);
@@ -625,9 +625,17 @@
           right: 0;
           width: vw1920(900);
           height: vw1920(480);
-          background: #eee;
+          background: #111;
           overflow: hidden;
           z-index: 900;
+          span {
+            display: inline-block;
+            width: 100%;
+            font-size: vw1920(30);
+            color: #fff;
+            text-align: center;
+            padding-top: vw1920(170);
+          }
           img {
             position: absolute;
             top: 0;
@@ -645,30 +653,68 @@
         .txt_box {
           position: absolute;
           top: vw1920(0);
-          width: vw1920(450);
+          width: vw1920(470);
           height: vw1920(500);
           visibility: hidden;
           &.default_c {
-            color: #fff;
+            color: $fontW;
           }
           .main_tit {
-            font-size: vw1920(48);
+            font-size: vw1920(40);
+            letter-spacing: vw1920(-1);
+            margin-bottom: vw1920(7);
+            span {
+              font-size: vw1920(32);
+            }
           }
           .sub_tit {
-            font-size: vw1920(30);
-            margin-bottom: vw1920(100);
+            font-size: vw1920(26);
+            margin-bottom: vw1920(30);
           }
           .more_btn {
             position: absolute;
-            top: vw1920(150);
-            font-size: vw1920(24);
-            color: inherit;
+            top: vw1920(250);
+            font-size: vw1920(20);
+            width: vw1920(115);
+            height: vw1920(36);
+            background: #000;
+            color: $fontW;
+          }
+          .more_btn:hover,
+          .more_btn:focus {
+            background: $fontW;
+            color: #000;
+          }
+          .txt_cnt,
+          .more_cnt {
+            visibility: inherit;
+            font-size: vw1920(20);
+            // height: vw1920(200);
+            line-height: 1.4;
           }
           .more_cnt {
+            margin-top: vw1920(60);
             display: none;
-            // visibility: inherit;
-            font-size: vw1920(26);
-            height: vw1920(280);
+            color: $yellow;
+            font-size: vw1920(18);
+            font-style: normal;
+          }
+        }
+        #txt2 {
+          .more_btn {
+            position: absolute;
+            top: vw1920(390);
+          }
+        }
+        #txt6,
+        #txt7 {
+          .more_btn {
+            display: none;
+          }
+        }
+        #txt3 {
+          .more_cnt {
+            letter-spacing: vw1920(-0.5);
           }
         }
       }
@@ -690,8 +736,12 @@
   .arrow_box {
     button {
       position: absolute;
-      color: #000;
       z-index: 2;
+      border-radius: 100%;
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 50px $yellow;
+      }
     }
     .up_btn {
       width: vw1920(600);
@@ -704,7 +754,7 @@
       width: vw1920(300);
       height: vw1920(300);
       top: vw1920(590);
-      left: vw1920(270);
+      left: vw1920(300);
       transform: rotate(180deg);
     }
   }
@@ -796,7 +846,7 @@
       &:nth-child(1) {
         //애니메이션종합
         margin-top: vw1920(160);
-        margin-left: vw1920(30);
+        margin-left: vw1920(20);
         width: vw1920(400);
         height: vw1920(450);
       }
@@ -810,14 +860,14 @@
       &:nth-child(3) {
         //지뢰
         margin-top: vw1920(380);
-        margin-left: vw1920(-200);
+        margin-left: vw1920(-235);
         width: vw1920(400);
         height: vw1920(400);
       }
       &:nth-child(4) {
         //디지털시계
-        margin-top: vw1920(50);
-        margin-left: vw1920(60);
+        margin-top: vw1920(60);
+        margin-left: vw1920(50);
         width: vw1920(300);
         height: vw1920(500);
       }
@@ -893,23 +943,37 @@
   top: 10%;
   left: 25%;
   width: 60%;
-  height: 80%;
+  height: 85%;
   visibility: hidden;
   .txt_box {
     width: 100%;
-    height: 20%;
+    height: 25%;
     color: $yellow;
     .title {
-      font-size: vw1920(36);
+      font-size: vw1920(28);
       margin-bottom: vw1920(20);
     }
     .txt {
-      font-size: vw1920(26);
+      font-size: vw1920(20);
+      span {
+        display: inline-block;
+        width: 8%;
+        text-align: unset;
+      }
+      .le1 {
+        letter-spacing: vw1920(0.6);
+      }
+      .le2 {
+        letter-spacing: vw1920(-0.5);
+      }
+      .le3 {
+        letter-spacing: vw1920(2);
+      }
     }
   }
   .cnt_box {
     width: 100%;
-    height: 80%;
+    height: 75%;
     background: #fff;
     position: relative;
     iframe {
@@ -919,7 +983,23 @@
       height: 100%;
     }
   }
-  // .md_close_btn{} -> 190번 줄에서 공통제어
+  // .md_close_btn{} -> 180번 줄에서 공통제어
+  .md_close_btn {
+    top: vw1920(0);
+    right: vw1920(0);
+  }
+}
+#ap4_md1,
+#ap4_md6 {
+  .txt_box {
+    height: 30%;
+  }
+  .cnt_box {
+    height: 70%;
+  }
+}
+#ap4_md6 {
+  font-size: vw1920(17);
 }
 
 // 패널5 컨텍트
@@ -988,7 +1068,11 @@
     }
   }
 }
-
+@media screen and (max-width: 1440px) {
+  .panel4_md {
+    height: 75%;
+  }
+}
 // 태블릿 1080
 @media screen and (max-width: 1080px) {
   // 여기부터 패널
