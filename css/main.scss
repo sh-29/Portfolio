@@ -1,7 +1,6 @@
 @charset "utf-8";
-@import '_var', '_function';
+@import '_var', '_function', '_mixin';
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900);
-@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:regular,700);
 
 // 여기부터 패널
 .container {
@@ -12,7 +11,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  // border: 1px solid red;
+  font-family: 'Noto Sans KR';
 }
 
 // 클릭 텍스트 애니메이션
@@ -26,20 +25,26 @@
     color: $point;
     animation: clickTxtAni 1s infinite;
     padding-right: vw1920(2);
+    font-size: vw1920(26);
     &:nth-child(1) {
       animation-delay: 0s;
+      font-size: vw1920(22);
     }
     &:nth-child(2) {
       animation-delay: 0.2s;
+      font-size: vw1920(22);
     }
     &:nth-child(3) {
       animation-delay: 0.4s;
+      font-size: vw1920(18);
     }
     &:nth-child(4) {
       animation-delay: 0.6s;
+      font-size: vw1920(18);
     }
     &:nth-child(4) {
       animation-delay: 0.8s;
+      font-size: vw1920(16);
     }
   }
   @keyframes clickTxtAni {
@@ -66,7 +71,6 @@
     right: vw1920(50);
     font-size: vw1920(40);
     color: $yellow;
-    font-family: 'Noto Sans KR';
     opacity: 0;
     z-index: 100;
     &.h3_ani {
@@ -174,7 +178,8 @@
 .circle {
   width: 100%;
   height: 100%;
-  border-radius: 100%;
+  // border-radius: 100%;
+  @include radius(100%);
   position: relative;
   font-weight: normal;
 }
@@ -196,7 +201,8 @@
   .circle {
     background: url('../images/main/panel1/panel1_photo1-0.jpg') no-repeat right
       center;
-    background-size: cover;
+    // background-size: cover;
+    @include bgsize(cover);
   }
   .bgChange {
     background: #000;
@@ -213,7 +219,8 @@
   justify-content: center;
   align-items: center;
   .txt_inner {
-    border-radius: 100%;
+    // border-radius: 100%;
+    @include radius(100%);
     width: 80%;
     height: 80%;
     text-align: center;
@@ -245,7 +252,8 @@
   .circle {
     background: url('../images/main/panel1/panel1_photo2-1.jpg') no-repeat
       center center;
-    background-size: cover;
+    // background-size: cover;
+    @include bgsize(cover);
     p {
       font-size: vw1920(40);
     }
@@ -256,7 +264,8 @@
   top: vw1920(0);
   left: vw1920(0);
   box-shadow: 0 0 0 #333;
-  transition: all 0.5s;
+  // transition: all 0.5s;
+  @include transition(all 0.5s);
 }
 #aP1ImgBox .shadow:hover,
 #aP1ImgBox .shadow:focus {
@@ -283,7 +292,8 @@
   .circle {
     background: url('../images/main/panel1/panel1_photo4-3.jpg') no-repeat right
       center;
-    background-size: cover;
+    // background-size: cover;
+    @include bgsize(cover);
     p {
       font-size: vw1920(35);
     }
@@ -298,7 +308,8 @@
   .circle {
     background: url('../images/main/panel1/panel1_photo3-2.jpg') no-repeat right
       bottom;
-    background-size: cover;
+    // background-size: cover;
+    @include bgsize(cover);
     p {
       font-size: vw1920(25);
     }
@@ -313,7 +324,8 @@
   .circle {
     background: url('../images/main/panel1/panel1_photo5-1.jpg') no-repeat right
       top;
-    background-size: cover;
+    // background-size: cover;
+    @include bgsize(cover);
     p {
       font-size: vw1920(20);
     }
@@ -345,7 +357,6 @@
 // 패널2 스킬
 #aP2 {
   position: relative;
-  font-family: 'Noto Sans KR';
   .container {
     display: flex;
     flex-direction: column;
@@ -414,7 +425,8 @@
       left: 50%;
       transform: translate(-50%, -50%);
       background: url('../images/common/light.png') no-repeat center center;
-      background-size: cover;
+      // background-size: cover;
+      @include bgsize(cover);
       z-index: 1;
     }
     p {
@@ -429,7 +441,8 @@
       height: vw1920(130);
       background: url('../images/common/electric_bulb_white.png') no-repeat
         center center;
-      background-size: contain;
+      // background-size: contain;
+      @include bgsize(contain);
       z-index: 2;
       &.on::after {
         content: '';
@@ -438,7 +451,8 @@
         height: vw1920(130);
         background: url('../images/common/electric_bulb_light.png') no-repeat
           center center;
-        background-size: contain;
+        // background-size: contain;
+        @include bgsize(contain);
         z-index: 2;
       }
     }
@@ -522,7 +536,8 @@
       label {
         width: 100%;
         height: 100%;
-        border-radius: vw1920(30);
+        // border-radius: vw1920(30);
+        @include radius(vw1920(30));
         position: absolute;
         top: 0;
         left: 0;
@@ -530,7 +545,6 @@
         color: $fontW;
         text-indent: vw1920(90);
         line-height: vw1920(38);
-        // border: 1px solid #000;
         font-size: vw1920(20);
         font-weight: normal;
         cursor: pointer;
@@ -554,8 +568,10 @@
         position: absolute;
         top: vw1920(2);
         left: vw1920(2);
-        border-radius: vw1920(30);
-        transition: all 0.5s;
+        // border-radius: vw1920(30);
+        @include radius(vw1920(30));
+        // transition: all 0.5s;
+        @include transition(all 0.5s);
       }
       label:active::after {
         width: 70%;
@@ -618,7 +634,8 @@
         width: 100%;
         height: vw1920(480);
         margin-bottom: vw1920(70);
-        transition: all 0.3s;
+        // transition: all 0.3s;
+        @include transition(all 0.3s);
         transform-origin: right;
         right: vw1920(-100);
         .slide_img {
@@ -738,7 +755,8 @@
     button {
       position: absolute;
       z-index: 2;
-      border-radius: 100%;
+      // border-radius: 100%;
+      @include radius(100%);
       &:hover,
       &:focus {
         box-shadow: 0 0 50px $yellow;
@@ -897,8 +915,8 @@
       button {
         width: vw1920(100);
         height: vw1920(36);
-        transition: all 0.5s;
-        // border: 1px solid #000;
+        // transition: all 0.5s;
+        @include transition(all 0.5s);
         box-shadow: 0 0 0 #333;
         font-size: vw1920(16);
         color: #fff;
@@ -923,7 +941,8 @@
     button {
       position: absolute;
       font-size: vw1920(40);
-      transition: all 0.5s;
+      // transition: all 0.5s;
+      @include transition(all 0.5s);
       padding: vw1920(7);
     }
     .left {
@@ -1064,7 +1083,7 @@
           font-size: vw1920(62);
         }
         p {
-          padding-top: vw1920(68);
+          padding-top: vw1920(50);
           font-size: vw1920(42);
         }
       }

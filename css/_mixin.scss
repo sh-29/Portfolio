@@ -1,0 +1,18 @@
+@mixin bgsize($value...) {
+  -webkit-background-size: $value;
+  -moz-background-size: $value;
+  background-size: $value;
+}
+
+@mixin radius($value...) {
+  -moz-border-radius: $value;
+  -webkit-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin transition($value...) {
+  -moz-transition: $value;
+  -webkit-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}

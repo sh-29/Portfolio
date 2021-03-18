@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import '_var';
-
+@import '_var', '_function', '_mixin';
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900);
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
 body {
   word-break: keep-all;
   overflow: hidden;
+  font-family: 'Noto Sans KR';
 }
 a:link,
 a:visited,
@@ -72,8 +73,9 @@ button {
   }
   p {
     display: none;
-    .fas, span{
-      color:$point;
+    .fas,
+    span {
+      color: $point;
     }
     &.block {
       display: block;

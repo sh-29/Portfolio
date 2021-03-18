@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,regular,500,700,900);
-@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:regular,700);
 .container {
   position: absolute;
   display: flex;
@@ -7,7 +6,8 @@
   height: 42vw;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Sans KR'; }
 
 .click_txt {
   display: flex;
@@ -18,17 +18,23 @@
     z-index: 100;
     color: #3664e8;
     animation: clickTxtAni 1s infinite;
-    padding-right: 0.1041666667vw; }
+    padding-right: 0.1041666667vw;
+    font-size: 1.3541666667vw; }
     .click_txt b:nth-child(1) {
-      animation-delay: 0s; }
+      animation-delay: 0s;
+      font-size: 1.1458333333vw; }
     .click_txt b:nth-child(2) {
-      animation-delay: 0.2s; }
+      animation-delay: 0.2s;
+      font-size: 1.1458333333vw; }
     .click_txt b:nth-child(3) {
-      animation-delay: 0.4s; }
+      animation-delay: 0.4s;
+      font-size: 0.9375vw; }
     .click_txt b:nth-child(4) {
-      animation-delay: 0.6s; }
+      animation-delay: 0.6s;
+      font-size: 0.9375vw; }
     .click_txt b:nth-child(4) {
-      animation-delay: 0.8s; }
+      animation-delay: 0.8s;
+      font-size: 0.8333333333vw; }
 @keyframes clickTxtAni {
   0% {
     padding-top: 0px; }
@@ -46,7 +52,6 @@
     right: 2.6041666667vw;
     font-size: 2.0833333333vw;
     color: #f3df4d;
-    font-family: 'Noto Sans KR';
     opacity: 0;
     z-index: 100; }
     #aP1 h3.h3_ani {
@@ -127,6 +132,8 @@
 .circle {
   width: 100%;
   height: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
   border-radius: 100%;
   position: relative;
   font-weight: normal; }
@@ -147,6 +154,8 @@
   right: 0; }
   .cnt0 .circle {
     background: url("../images/main/panel1/panel1_photo1-0.jpg") no-repeat right center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover; }
   .cnt0 .bgChange {
     background: #000; }
@@ -161,6 +170,8 @@
   justify-content: center;
   align-items: center; }
   .txt_wrap .txt_inner {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
     border-radius: 100%;
     width: 80%;
     height: 80%;
@@ -187,6 +198,8 @@
   left: 8.8541666667vw; }
   .cnt1 .circle {
     background: url("../images/main/panel1/panel1_photo2-1.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover; }
     .cnt1 .circle p {
       font-size: 2.0833333333vw; }
@@ -195,6 +208,9 @@
   top: 0vw;
   left: 0vw;
   box-shadow: 0 0 0 #333;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s; }
 
 #aP1ImgBox .shadow:hover,
@@ -220,6 +236,8 @@
   left: 0; }
   .cnt2 .circle {
     background: url("../images/main/panel1/panel1_photo4-3.jpg") no-repeat right center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover; }
     .cnt2 .circle p {
       font-size: 1.8229166667vw; }
@@ -232,6 +250,8 @@
   left: 5.9895833333vw; }
   .cnt3 .circle {
     background: url("../images/main/panel1/panel1_photo3-2.jpg") no-repeat right bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover; }
     .cnt3 .circle p {
       font-size: 1.3020833333vw; }
@@ -244,6 +264,8 @@
   left: 11.71875vw; }
   .cnt4 .circle {
     background: url("../images/main/panel1/panel1_photo5-1.jpg") no-repeat right top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover; }
     .cnt4 .circle p {
       font-size: 1.0416666667vw; }
@@ -271,8 +293,7 @@
     visibility: inherit; }
 
 #aP2 {
-  position: relative;
-  font-family: 'Noto Sans KR'; }
+  position: relative; }
   #aP2 .container {
     display: flex;
     flex-direction: column; }
@@ -330,6 +351,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: url("../images/common/light.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
     background-size: cover;
     z-index: 1; }
   #aP2 .img_box li p {
@@ -342,6 +365,8 @@
     width: 6.7708333333vw;
     height: 6.7708333333vw;
     background: url("../images/common/electric_bulb_white.png") no-repeat center center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
     background-size: contain;
     z-index: 2; }
     #aP2 .img_box li span.on::after {
@@ -350,6 +375,8 @@
       width: 6.7708333333vw;
       height: 6.7708333333vw;
       background: url("../images/common/electric_bulb_light.png") no-repeat center center;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
       background-size: contain;
       z-index: 2; }
   #aP2 .img_box li b {
@@ -415,6 +442,8 @@
     #aP2 .toggle_box .cnt .toggle label {
       width: 100%;
       height: 100%;
+      -moz-border-radius: 1.5625vw;
+      -webkit-border-radius: 1.5625vw;
       border-radius: 1.5625vw;
       position: absolute;
       top: 0;
@@ -441,7 +470,12 @@
       position: absolute;
       top: 0.1041666667vw;
       left: 0.1041666667vw;
+      -moz-border-radius: 1.5625vw;
+      -webkit-border-radius: 1.5625vw;
       border-radius: 1.5625vw;
+      -moz-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
       transition: all 0.5s; }
     #aP2 .toggle_box .cnt .toggle label:active::after {
       width: 70%; }
@@ -490,6 +524,9 @@
         width: 100%;
         height: 25vw;
         margin-bottom: 3.6458333333vw;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
         transform-origin: right;
         right: -5.2083333333vw; }
@@ -577,6 +614,8 @@
   #aP3 .arrow_box button {
     position: absolute;
     z-index: 2;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
     border-radius: 100%; }
     #aP3 .arrow_box button:hover, #aP3 .arrow_box button:focus {
       box-shadow: 0 0 50px #f3df4d; }
@@ -697,6 +736,9 @@
       #aP4 .cnt_list li button {
         width: 5.2083333333vw;
         height: 1.875vw;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
         transition: all 0.5s;
         box-shadow: 0 0 0 #333;
         font-size: 0.8333333333vw;
@@ -717,6 +759,9 @@
     #aP4 .arrow_box button {
       position: absolute;
       font-size: 2.0833333333vw;
+      -moz-transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
       transition: all 0.5s;
       padding: 0.3645833333vw; }
     #aP4 .arrow_box .left {
@@ -826,7 +871,7 @@
         display: block;
         font-size: 3.2291666667vw; }
       #aP5 .container .cnt .txt_box p {
-        padding-top: 3.5416666667vw;
+        padding-top: 2.6041666667vw;
         font-size: 2.1875vw; }
 
 @media screen and (max-width: 1440px) {
