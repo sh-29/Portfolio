@@ -6,8 +6,7 @@
   height: 42vw;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Noto Sans KR'; }
+  transform: translate(-50%, -50%); }
 
 .click_txt {
   display: flex;
@@ -573,10 +572,10 @@
             margin-bottom: 1.5625vw; }
           #aP3 .slide_view .slide_wrap .slide .txt_box .more_btn {
             position: absolute;
-            top: 13.0208333333vw;
+            top: 14.5833333333vw;
             font-size: 1.0416666667vw;
             width: 5.9895833333vw;
-            height: 1.875vw;
+            height: 1.8229166667vw;
             background: #000;
             color: #f3f3f3; }
           #aP3 .slide_view .slide_wrap .slide .txt_box .more_btn:hover,
@@ -587,7 +586,11 @@
           #aP3 .slide_view .slide_wrap .slide .txt_box .more_cnt {
             visibility: inherit;
             font-size: 1.0416666667vw;
-            line-height: 1.4; }
+            line-height: 1.3;
+            font-weight: 300; }
+            #aP3 .slide_view .slide_wrap .slide .txt_box .txt_cnt i,
+            #aP3 .slide_view .slide_wrap .slide .txt_box .more_cnt i {
+              margin-top: 12px; }
           #aP3 .slide_view .slide_wrap .slide .txt_box .more_cnt {
             margin-top: 3.125vw;
             display: none;
@@ -596,7 +599,8 @@
             font-style: normal; }
         #aP3 .slide_view .slide_wrap .slide #txt2 .more_btn {
           position: absolute;
-          top: 19.2708333333vw; }
+          top: 19.7916666667vw; }
+        #aP3 .slide_view .slide_wrap .slide #txt5 .more_btn,
         #aP3 .slide_view .slide_wrap .slide #txt6 .more_btn,
         #aP3 .slide_view .slide_wrap .slide #txt7 .more_btn {
           display: none; }

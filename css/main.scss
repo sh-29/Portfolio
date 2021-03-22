@@ -11,7 +11,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Noto Sans KR';
 }
 
 // 클릭 텍스트 애니메이션
@@ -691,10 +690,10 @@
           }
           .more_btn {
             position: absolute;
-            top: vw1920(250);
+            top: vw1920(280);
             font-size: vw1920(20);
             width: vw1920(115);
-            height: vw1920(36);
+            height: vw1920(35);
             background: #000;
             color: $fontW;
           }
@@ -708,7 +707,11 @@
             visibility: inherit;
             font-size: vw1920(20);
             // height: vw1920(200);
-            line-height: 1.4;
+            line-height: 1.3;
+            font-weight: 300;
+            i {
+              margin-top: 12px;
+            }
           }
           .more_cnt {
             margin-top: vw1920(60);
@@ -721,9 +724,10 @@
         #txt2 {
           .more_btn {
             position: absolute;
-            top: vw1920(370);
+            top: vw1920(380);
           }
         }
+        #txt5,
         #txt6,
         #txt7 {
           .more_btn {
