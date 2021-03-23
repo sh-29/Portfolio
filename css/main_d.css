@@ -407,8 +407,7 @@
     width: 16.1458333333vw;
     height: 16.1458333333vw;
     opacity: 0.8; }
-  #aP2 .img_box li .js,
-  #aP2 .img_box li .vue {
+  #aP2 .img_box li .js {
     width: 12.5vw;
     height: 12.5vw;
     opacity: 0.7; }
@@ -416,6 +415,10 @@
     width: 13.5416666667vw;
     height: 13.5416666667vw;
     opacity: 0.75; }
+  #aP2 .img_box li .adobe {
+    width: 17.1875vw;
+    height: 17.1875vw;
+    opacity: 0.9; }
 
 #aP2 .toggle_box .cnt {
   width: 75%;
@@ -453,7 +456,7 @@
       cursor: pointer; }
       #aP2 .toggle_box .cnt .toggle label.tg_css {
         text-indent: 5.5208333333vw; }
-      #aP2 .toggle_box .cnt .toggle label.tg_js, #aP2 .toggle_box .cnt .toggle label.tg_vue {
+      #aP2 .toggle_box .cnt .toggle label.tg_js, #aP2 .toggle_box .cnt .toggle label.tg_adobe {
         text-indent: 4.1666666667vw; }
       #aP2 .toggle_box .cnt .toggle label.tg_jq {
         text-indent: 3.8541666667vw; }
@@ -493,8 +496,8 @@
       color: #333; }
     #aP2 .toggle_box .cnt .toggle input:checked + label.tg_sass {
       background: linear-gradient(90deg, #cf649a, #ff207d); }
-    #aP2 .toggle_box .cnt .toggle input:checked + label.tg_vue {
-      background: linear-gradient(90deg, #41b883, #35495e); }
+    #aP2 .toggle_box .cnt .toggle input:checked + label.tg_adobe {
+      background: linear-gradient(90deg, #3b0101, #000000); }
 
 #aP3 {
   position: relative; }
@@ -597,6 +600,7 @@
         #aP3 .slide_view .slide_wrap .slide #txt2 .more_btn {
           position: absolute;
           top: 19.7916666667vw; }
+        #aP3 .slide_view .slide_wrap .slide #txt5 .more_btn,
         #aP3 .slide_view .slide_wrap .slide #txt6 .more_btn,
         #aP3 .slide_view .slide_wrap .slide #txt7 .more_btn {
           display: none; }
@@ -888,4 +892,4 @@
     transform: translate(-50%, -50%);
     border: 1px solid red; } }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main_d.css.map */

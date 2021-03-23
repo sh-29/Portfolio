@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>김선희 : 포트폴리오 : 신입 웹퍼블리셔</title>
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/intro.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/main_d.css" />
+    <link rel="stylesheet" href="css/lightmode.css" />
+
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <!-- 스크립트 -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/intro.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main_d.js"></script>
+    <script src="js/modal2.js"></script>
+
+    <script></script>
+  </head>
+  <body>
+    <!-- 접근성 지키기 -->
+    <div id="skip">
+      <a href="#aP1">본문 바로가기</a>
+    </div>
+
+    <!-- 마우스 커서 따라다니기 -->
+    <div id="cursor_follow">
+      <svg id="svg1" class="svg" width="28" height="28">
+        <circle cx="14" cy="14" r="12" fill="#3664e8" />
+      </svg>
+      <p style="font-size: 1.25vw">
+        &nbsp;&nbsp;<i class="fas fa-external-link-alt"></i
+        ><span>&nbsp;view site</span>
+      </p>
+      <!-- <i class="fas fa-mouse"></i> 
+      <i class="fas fa-external-link-alt"></i>-->
+    </div>
+
+    <!-- pc용 intro -->
+    <div class="intro black_bg" id="pcIntro">
+      <p class="pc_gradient_bg"></p>
+      <div class="intro_wrap">
+        <div class="move">
+          <div class="light"></div>
+          <div id="loadingBox">
+            <p><span id="loadNum">0</span>%</p>
+            <div class="icon">
+              <div class="num"></div>
+            </div>
+          </div>
+        </div>
+
+        <h1>PORTFOLIO</h1>
+        <p class="h1_shadow" aria-hidden="true">PORTFOLIO</p>
+        <div class="txt_box name">
+          <p>WEB <br />PUBLISHER</p>
+          <strong>KIM SEON HEE</strong>
+        </div>
+        <!-- <div class="txt_box2">
+          <p>
+            오픈소스 사용하지 않고 <br />한 땀 한 땀 직접 도전했습니다.
+            <br /><br />
+            이 사이트는 다크모드를 지원하고 반응형을 제작중입니다.
+          </p>
+        </div> -->
+      </div>
+      <a href="#main" class="icon_box">
+        <div class="icon_move">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-chevron-down"></i>
+          <!-- <i class="fas fa-chevron-right"></i> -->
+          <!-- <i class="fas fa-angle-double-down"></i> -->
+        </div>
+      </a>
+    </div>
+
+    <!-- mobile용 intro -->
+    <div class="intro" id="mIntro">
+      <div class="move">
+        <div class="light"></div>
+        <div id="loadingBox_m">
+          <p><span id="loadNum_m">0</span>%</p>
+          <img
+            src="images/common/electric_bulb_white.png"
+            alt="불이 켜지지 않은 전구"
+          />
+        </div>
+      </div>
+      <h1>PORTFOLIO</h1>
+      <p class="h1_shadow" aria-hidden="true">PORTFOLIO</p>
+      <div class="txt_box name">
+        <p>WEB <br />PUBLISHER</p>
+        <strong>KIM SEON HUI</strong>
+      </div>
+    </div>
+
+    <!-- main content -->
+    <main id="main" class="pc_view m_view">
+      <!-- 처음 인덱스화면으로 가는 버튼 -->
+      <a href="index.html" id="home_btn">
+        <i class="fas fa-star-of-life"></i><span>HOME</span>
+      </a>
+      <!-- 테마변경 버튼. (기본이 다크모드) -->
+      <!-- onclick="mode()" -->
+      <button type="button" id="mode">
+        <i class="fas fa-moon" id="modeIcon"></i><span>mode</span>
+        <!-- <i class="fas fa-sun"></i> -->
+        <!-- <i class="fas fa-adjust"></i> -->
+      </button>
+      <!-- 뒤에 장식 -->
+      <div class="main_back" aria-hidden="true">
+        <div class="txt_box">
+          <p>
+            오픈소스 사용하지 않고 <br />
+            한 땀 한 땀 직접 <br />도전했습니다. <br /><br />
+            이 사이트는 다크모드를 지원하고 반응형을 제작중입니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 패널1 캐릭터 CHARACTER -->
+      <h2 class="tit">
+        <button
+          type="button"
+          id="aH1"
+          class="a_header first"
+          aria-controls="aP1"
+          aria-expanded="false"
+        >
+          CHARACTER
+        </button>
+      </h2>
+      <div aria-labelledby="aH1" id="aP1" class="a_panel">
+        <div class="container">
+          <h3>
+            <span>도전 </span>
+            <button
+              type="button"
+              class="click1 click_txt"
+              data-href="#aP1ImgBox"
+            >
+              <b>c</b>
+              <b>l</b>
+              <b>i</b>
+              <b>c</b>
+              <b>k</b></button
+            >하며, <span>성장 </span>
+            <button
+              type="button"
+              class="click2 click_txt"
+              data-href="#aP1TxtBox"
+            >
+              <b>c</b>
+              <b>l</b>
+              <b>i</b>
+              <b>c</b>
+              <b>k</b>
+            </button>
+            하는 것을 좋아하는 <br />
+            <small>사람 <b>김선희</b> 입니다.</small>
+          </h3>
+          <div id="aP1ImgBox">
+            <div class="cnt0">
+              <p class="circle"></p>
+            </div>
+            <div class="cnt1">
+              <button
+                type="button"
+                class="circle shadow md_open_btn click_txt"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#no1"
+              >
+                <b>c</b>
+                <b>l</b>
+                <b>i</b>
+                <b>c</b>
+                <b>k</b>
+              </button>
+            </div>
+            <div class="cnt2">
+              <button
+                type="button"
+                class="circle shadow md_open_btn click_txt"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#no2"
+              >
+                <b>c</b>
+                <b>l</b>
+                <b>i</b>
+                <b>c</b>
+                <b>k</b>
+              </button>
+            </div>
+            <div class="cnt3">
+              <button
+                type="button"
+                class="circle shadow md_open_btn click_txt"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#no3"
+              >
+                <b>c</b>
+                <b>l</b>
+                <b>i</b>
+                <b>c</b>
+                <b>k</b>
+              </button>
+            </div>
+            <div class="cnt4">
+              <button
+                type="button"
+                class="circle shadow md_open_btn click_txt"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#no4"
+              >
+                <b>c</b>
+                <b>l</b>
+                <b>i</b>
+                <b>c</b>
+                <b>k</b>
+              </button>
+            </div>
+          </div>
+          <div id="aP1TxtBox">
+            <p>
+              안녕하세요. 만나서 반갑습니다. <br />
+              저는 처음에는 조금 부족할 수 있지만,
+              <br />꾸준히 성장하는 것에 흥미와 자부심을 느낍니다.<br />
+              <br />
+              현재 저는 "나 코딩 완전 잘해" 라고 할 수 없습니다. <br />
+              하지만, 잘 하는 사람은 태어날 때 부터 <br />
+              " !DOCTYPE html " 외치면서 태어나는 것도 아니고! <br />
+              div가 무엇인지도 몰랐던 제가 <br />
+              지금은 페이지를 만들 줄 알게 됐고, <br />
+              부족하지만 포트폴리오도 만들었습니다. <br />
+              <br />
+              개구리도 올챙이 시절이 있었고, <br />
+              국민mc 유재석도 무명이 10년 이었습니다. <br />
+              저는 앞으로 더 대단하고 멋진 코딩을 할 수 있는 <br />
+              가능성 있는 사람입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 패널2 스킬 SKILL -->
+      <h2 class="tit">
+        <button
+          type="button"
+          id="aH2"
+          class="a_header"
+          aria-controls="aP2"
+          aria-expanded="false"
+        >
+          SKILL
+        </button>
+      </h2>
+      <div aria-labelledby="aH2" id="aP2" class="a_panel">
+        <div class="container">
+          <p class="guide">저와 함께 가능성의 불을 켜봐요! ^^</p>
+          <!-- 상단 전구 ul -->
+          <ul class="img_box">
+            <!-- p:조도, span:전구(공통 백그라운드로) -->
+            <li>
+              <p class="html"></p>
+              <span></span>
+              <b class="fz190">90</b>
+            </li>
+            <li>
+              <p class="css"></p>
+              <span></span>
+              <b class="fz160">70</b>
+            </li>
+            <li>
+              <p class="sass"></p>
+              <span></span>
+              <b class="fz135">65</b>
+            </li>
+            <li>
+              <p class="js"></p>
+              <span></span>
+              <b class="fz135">60</b>
+            </li>
+            <li>
+              <p class="jquery"></p>
+              <span></span>
+              <b class="fz160">70</b>
+            </li>
+            <li>
+              <p class="vue"></p>
+              <span></span>
+              <b class="fz135">50</b>
+            </li>
+          </ul>
+          <!-- 하단 토글 ul -->
+          <ul class="toggle_box">
+            <li class="toggle_list">
+              <div class="cnt">
+                <img
+                  class="logo"
+                  src="images/main/panel2/panel2_icon_html.png"
+                  alt="H T M L 로고"
+                />
+                <div class="toggle">
+                  <input type="checkbox" id="tgHtml" />
+                  <label data-num="90" for="tgHtml" class="tg tg_html"
+                    >html</label
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="toggle_list">
+              <div class="cnt">
+                <img
+                  class="logo"
+                  src="images/main/panel2/panel2_icon_css.png"
+                  alt="C S S 로고"
+                />
+                <div class="toggle">
+                  <input type="checkbox" id="tgCss" />
+                  <label data-num="70" for="tgCss" class="tg tg_css">css</label>
+                </div>
+              </div>
+            </li>
+            <li class="toggle_list">
+              <div class="cnt">
+                <img
+                  class="logo"
+                  src="images/main/panel2/panel2_icon_sass.png"
+                  alt="싸스 로고"
+                />
+                <div class="toggle">
+                  <input type="checkbox" id="tgSass" />
+                  <label data-num="65" for="tgSass" class="tg tg_sass"
+                    >sass</label
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="toggle_list">
+              <div class="cnt">
+                <img
+                  class="logo"
+                  src="images/main/panel2/panel2_icon_js.png"
+                  alt="자바스크립트 로고"
+                />
+                <div class="toggle">
+                  <input type="checkbox" id="tgJs" />
+                  <label data-num="60" for="tgJs" class="tg tg_js"
+                    >script</label
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="toggle_list">
+              <div class="cnt">
+                <img
+                  class="logo jq"
+                  src="images/main/panel2/panel2_icon_jquery.png"
+                  alt="제이쿼리 로고"
+                />
+                <div class="toggle">
+                  <input type="checkbox" id="tgJq" />
+                  <label data-num="70" for="tgJq" class="tg tg_jq"
+                    >jQuery</label
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="toggle_list">
+              <div class="cnt">
+                <img
+                  class="logo"
+                  src="images/main/panel2/panel2_icon_vueJS.png"
+                  alt="뷰JS 로고"
+                />
+                <div class="toggle">
+                  <input type="checkbox" id="tgAdobe" />
+                  <label data-num="50" for="tgAdobe" class="tg tg_vue"
+                    >vue</label
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 패널3 작업물 CODING -->
+      <h2 class="tit">
+        <button
+          type="button"
+          id="aH3"
+          class="a_header"
+          aria-controls="aP3"
+          aria-expanded="false"
+        >
+          PORTFOLIO
+        </button>
+      </h2>
+      <div aria-labelledby="aH3" id="aP3" class="a_panel">
+        <div class="container">
+          <div class="slide_view" aria-live="polite">
+            <ul class="slide_wrap">
+              <!-- 7번 마지막 컨텐츠 -->
+              <li class="slide" data-tgtxt="txt7">
+                <a
+                  href="https://sh-29.github.io/study/panel3_design/design_img.html"
+                  target="_blank"
+                  class="slide_img"
+                  ><span></span>
+                  <img
+                    class="gray"
+                    src="images/main/panel3/design2.jpg"
+                    alt="포토샵, 일러스트 작업물 두번째 미리보기"
+                  />
+                  <img
+                    class="color"
+                    src="images/main/panel3/design2.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+                <div id="txt7" class="txt_box default_c">
+                  <p class="main_tit">포토샵, 일러스트 작업물Ⅱ</p>
+                  <p class="sub_tit">(배너, 쿠폰)</p>
+                  <p class="txt_cnt">
+                    <!-- <i class="far fa-comment"></i> 수정할 텍스트 <br> -->
+                    <i class="fas fa-comment-dots"></i> 도형을 있는 것 중에서
+                    고르는 것에 만족하지 않고, 결합하고 빼서 원하는 모양을
+                    만드는 방법을 배웠습니다. 펜툴이 익숙했었는데 간단한 모양은
+                    도형을 활용하면 더 편리하고 깨끗한 작업물을 얻을 수 있다는
+                    것을 배웠습니다.
+                  </p>
+                  <button type="button" class="more_btn">view more</button>
+                  <p class="more_cnt">
+                    <!-- <i class="fas fa-comment-dots"></i> 수정할 텍스트  -->
+                  </p>
+                </div>
+              </li>
+              <!-- 1번 첫번째 컨텐츠 -->
+              <li class="slide" data-tgtxt="txt1">
+                <a
+                  href="https://sh-29.github.io/laon/index.html"
+                  target="_blank"
+                  class="slide_img"
+                  ><span></span>
+                  <img
+                    class="gray"
+                    src="images/main/panel3/laon.jpg"
+                    alt="라온시큐어 제작 사이트 미리보기"
+                  />
+                  <img
+                    class="color"
+                    src="images/main/panel3/laon.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+                <div id="txt1" class="txt_box default_c">
+                  <p class="main_tit">라온시큐어</p>
+                  <p class="sub_tit">(반응형 기업 사이트 clone coding)</p>
+                  <p class="txt_cnt">
+                    <i class="far fa-comment"></i>
+                    swiper 오픈소스를 활용한 풀페이지 사이트 <br />
+                    <i class="far fa-comment"></i> 마우스, 키보드 모두 풀페이지
+                    제어 가능 <br />
+                    <i class="far fa-comment"></i> 다양한 화면사이즈를 지원하는
+                    반응형 사이트 <br />
+                    <i class="far fa-comment"></i> sass를 활용하여 효율적으로
+                    작업
+                  </p>
+                  <button type="button" class="more_btn">view more</button>
+                  <p class="more_cnt">
+                    <i class="fas fa-comment-dots"></i> 오픈소스를 활용하는
+                    방법을 배웠으며, 오픈소스 코드에 감탄을 했습니다. 나중에
+                    실력을 쌓아서 직접 코딩 해보고 싶다는 생각을 했습니다.
+                    <br />
+                    <i class="fas fa-comment-dots"></i> css 전처리기가 있다는
+                    것을 알았고, 스타일 적용할 요소를 중첩시켜 부르고, 함수를
+                    사용할 수 있다는 것이 신기했습니다. 처음에는 익숙하지 않아서
+                    css를 안쓰고 왜 sass로 하실까 했지만 쓸 수록 왜 sass를
+                    쓰는지 알았습니다.
+                  </p>
+                </div>
+              </li>
+              <!-- 2번 컨텐츠 -->
+              <li class="slide" data-tgtxt="txt2">
+                <a
+                  href="https://sh-29.github.io/laon/index.html"
+                  target="_blank"
+                  class="slide_img"
+                  ><span></span>
+                  <img
+                    class="gray"
+                    src="images/main/panel3/laon2.jpg"
+                    alt="라온시큐어의 접근성 미리보기"
+                  />
+                  <img
+                    class="color"
+                    src="images/main/panel3/laon2.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+                <div id="txt2" class="txt_box default_c">
+                  <p class="main_tit">웹접근성 보고서</p>
+                  <p class="sub_tit">(라온시큐어 홈페이지 예시)</p>
+                  <p class="txt_cnt">
+                    <i class="far fa-comment"></i>
+                    운용의 용이성 : '본문 바로가기'로 서브페이지를 들어갈 때마다
+                    네비게이션을 또 들어야 하는 불편함을 없애주었습니다. <br />
+                    <i class="far fa-comment"></i>
+                    운용의 용이성 : 모달로 들어가면 모달의 처음버튼<small
+                      >(or 링크)</small
+                    >에 포커스가 가고, 닫기 버튼을 누르기 전까지 모달에서 나가지
+                    못하게 제어했습니다. <br />
+                    <i class="far fa-comment"></i>
+                    인식의 용이성 : 배경과 글자색이 명도대비 4.5에 준하도록
+                    글자의 밝기를 높였습니다.
+                  </p>
+                  <button type="button" class="more_btn">view more</button>
+                  <p class="more_cnt">
+                    <i class="fas fa-comment-dots"></i> 접근성을 배우면서 단순히
+                    눈에 보이는 것만 구축하는 것이 아니라는 것을 알았습니다.
+                    눈에 보이는 것만 구현한다면 누군가 배제될 수 있다는 것을
+                    <br />명심하고 신경써야겠다는 마음이 <br />들었습니다.
+                    <br />
+                  </p>
+                </div>
+              </li>
+              <!-- 3번 컨텐츠 -->
+              <li class="slide" data-tgtxt="txt3">
+                <a
+                  href="https://sh-29.github.io/study/netflix/index.html"
+                  target="_blank"
+                  class="slide_img"
+                  ><span></span>
+                  <img
+                    class="gray"
+                    src="images/main/panel3/netflix.jpg"
+                    alt="넷플릭스 제작 사이트 미리보기"
+                  />
+                  <img
+                    class="color"
+                    src="images/main/panel3/netflix.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+                <div id="txt3" class="txt_box default_c">
+                  <p class="main_tit">넷플릭스</p>
+                  <p class="sub_tit">(반응형 구조 연습 clone coding)</p>
+                  <p class="txt_cnt">
+                    <i class="far fa-comment"></i> 다양한 화면사이즈를 지원하는
+                    반응형 사이트 <br />
+                    <i class="far fa-comment"></i> viewport meta 태그 <br />
+                    <i class="far fa-comment"></i> 미디어쿼리 활용 <br />
+                    <i class="far fa-comment"></i> vw,vh 사이즈 활용 <br />
+                  </p>
+                  <button type="button" class="more_btn">view more</button>
+                  <p class="more_cnt">
+                    <i class="fas fa-comment-dots"></i> 반응형에 대해 제 언어로
+                    표현 가능도록 익히는 중입니다 <br />
+                  </p>
+                </div>
+              </li>
+              <!-- 4번 컨텐츠 -->
+              <li class="slide" data-tgtxt="txt4">
+                <a
+                  href="https://sh-29.github.io/study/prugio/brand.html"
+                  target="_blank"
+                  class="slide_img"
+                  ><span></span>
+                  <img
+                    class="gray"
+                    src="images/main/panel3/prugio_sub.jpg"
+                    alt="푸르지오 서브페이지 브랜드와 로그인 제작 사이트 미리보기"
+                  />
+                  <img
+                    class="color"
+                    src="images/main/panel3/prugio_sub.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+
+                <div id="txt4" class="txt_box default_c">
+                  <p class="main_tit">푸르지오<span> : 브랜드, 로그인</span></p>
+                  <p class="sub_tit">(고정형 서브페이지 clone coding)</p>
+                  <p class="txt_cnt">
+                    <i class="far fa-comment"></i> 푸르지오 사이트의
+                    서브페이지로 <br />&nbsp;&nbsp;메인페이지와 동일한 header와
+                    footer 스타일 <br />
+                    <i class="far fa-comment"></i> 웹디자인 3.0 스타일의 브랜드
+                    페이지 <br />
+                    <i class="far fa-comment"></i> form태그를 활용한 로그인
+                    페이지 <br />
+                  </p>
+                  <button type="button" class="more_btn">view more</button>
+                  <p class="more_cnt">
+                    <i class="fas fa-comment-dots"></i> 메인페이지뿐만 아니라
+                    서브페이지도 만들어봐야 한다고 생각했습니다. 공통 스타일을
+                    따로 저장 후 적용할 문서에서 불러온다는 것을 알았습니다.
+                    <br />
+                    <i class="fas fa-comment-dots"></i> 요소들이 겹쳐있는
+                    웹디자인 3.0 스타일을 알았고, 포토샵이 아닌 css position
+                    으로 이미지를 겹쳤습니다. <br />
+                    <i class="fas fa-comment-dots"></i> 많이 쓰이는 로그인창을
+                    통해 form태그를 익혔습니다. <br />
+                    <i class="fas fa-comment-dots"></i> flex로 레이아웃을 많이
+                    잡고, 편리하지만 이전의 position 방식도 이해하고 싶어서 직접
+                    간격을 계산해서 <br />레이아웃 잡는 연습을 했습니다.
+                  </p>
+                </div>
+              </li>
+              <!-- 5번 컨텐츠 -->
+              <li class="slide" data-tgtxt="txt5">
+                <a
+                  href="https://sh-29.github.io/study/ggumim/index.html"
+                  target="_blank"
+                  class="slide_img"
+                  ><span></span>
+                  <img
+                    class="gray"
+                    src="images/main/panel3/home.jpg"
+                    alt="집꾸미기 사이트 리디자인 미리보기"
+                  />
+                  <img
+                    class="color"
+                    src="images/main/panel3/home.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+                <div id="txt5" class="txt_box default_c">
+                  <p class="main_tit">집 꾸미기</p>
+                  <p class="sub_tit">(쇼핑몰 사이트 redesign)</p>
+                  <p class="txt_cnt">
+                    <i class="fas fa-comment-dots"></i> 시원해 보이도록 가로
+                    860px -> 1140px으로 변경 <br />
+                    <i class="fas fa-comment-dots"></i> 베스트 품목이 많아서
+                    한눈에 안들어오고, 페이지가 길어져서 스크롤을 많이 해야하는
+                    피로감을 느껴서 품목 수량 조절 <br />
+                    <i class="fas fa-comment-dots"></i> 할인쿠폰 뒤에 세일
+                    상품을 배치해서 할인쿠폰으로 세일상품을 구매하여 더 저렴하게
+                    살 수 있다는 생각을 들게 하면서 구매 유도 <br />
+                    <i class="fas fa-comment-dots"></i> 이번주 인기
+                    인테리어사진과 이번주 가장 조회수 높은집 카테고리가 중복으로
+                    느껴져서 하나로 묶음 <br />
+                  </p>
+                  <button type="button" class="more_btn">view more</button>
+                  <p class="more_cnt">
+                    <i class="fas fa-comment-dots"></i>
+                  </p>
+                </div>
+              </li>
+              <!-- 6번 컨텐츠 -->
+              <li class="slide" data-tgtxt="txt6">
+                <a
+                  href="https://sh-29.github.io/study/panel3_design/design_img2.html"
+                  target="_blank"
+                  class="slide_img"
+                  ><span></span>
+                  <img
+                    class="gray"
+                    src="images/main/panel3/design1.jpg"
+                    alt="포토샵, 일러스트 작업물 첫번째 미리보기"
+                  />
+                  <img
+                    class="color"
+                    src="images/main/panel3/design1.jpg"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </a>
+                <div id="txt6" class="txt_box default_c">
+                  <p class="main_tit">포토샵, 일러스트 작업물Ⅰ</p>
+                  <p class="sub_tit">(이벤트, 팝업창, ux/ui)</p>
+                  <p class="txt_cnt">
+                    <!-- <i class="far fa-comment"></i> 수정할 텍스트<br> -->
+                    <i class="fas fa-comment-dots"></i> 포토샵의 엠보스,
+                    내부그림자 등 자주 쓰지 않아서 잘 알지 못했던 기능들에
+                    대해서 배웠고, 2d작업물뿐만 아니라 3d처럼 보이게 만들 수
+                    있다는 것이 신기했습니다.
+                  </p>
+                  <button type="button" class="more_btn">view more</button>
+                  <p class="more_cnt">
+                    <i class="fas fa-comment-dots"></i>
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="arrow_box">
+            <button type="button" class="up_btn">
+              <img
+                src="images/main/arrow-alt-circle-up-solid.svg"
+                alt="이전 버튼"
+              />
+            </button>
+            <button type="button" class="down_btn">
+              <img
+                src="images/main/arrow-alt-circle-up-solid.svg"
+                alt="다음 버튼"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 패널4 스크립트 SCRIPT & JQUERY -->
+      <h2 class="tit">
+        <button
+          type="button"
+          id="aH4"
+          class="a_header"
+          aria-controls="aP4"
+          aria-expanded="false"
+        >
+          SCRIPT&nbsp;&&nbsp;JQUERY
+        </button>
+      </h2>
+      <div aria-labelledby="aH4" id="aP4" class="a_panel">
+        <div class="container">
+          <ul class="cnt_list">
+            <li>
+              <iframe
+                src="https://sh-29.github.io/script/all_ani.html"
+                sandbox="allow-scripts"
+              ></iframe>
+              <button
+                type="button"
+                class="md_open_btn"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#ap4_md1"
+              >
+                자세히 보기
+              </button>
+            </li>
+            <li>
+              <iframe
+                src="https://sh-29.github.io/script/textstroke.html"
+                sandbox="allow-scripts"
+              ></iframe>
+              <button
+                type="button"
+                class="md_open_btn"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#ap4_md2"
+              >
+                자세히 보기
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="md_open_btn"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#ap4_md3"
+              >
+                자세히 보기
+              </button>
+              <iframe
+                src="https://sh-29.github.io/script/find.html"
+                sandbox="allow-scripts"
+              ></iframe>
+            </li>
+            <li>
+              <iframe
+                src="https://sh-29.github.io/script/clock2.html"
+                sandbox="allow-scripts"
+              ></iframe>
+              <button
+                type="button"
+                class="md_open_btn"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#ap4_md4"
+              >
+                자세히 보기
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="md_open_btn"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#ap4_md5"
+              >
+                자세히 보기
+              </button>
+              <iframe
+                src="https://sh-29.github.io/script/svg.html"
+                sandbox="allow-scripts"
+              ></iframe>
+            </li>
+            <li>
+              <iframe
+                src="https://sh-29.github.io/script/autoslide/index1.html"
+                sandbox="allow-scripts"
+              ></iframe>
+              <button
+                type="button"
+                class="md_open_btn"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#ap4_md6"
+              >
+                자세히 보기
+              </button>
+            </li>
+            <li>
+              <iframe
+                src="https://sh-29.github.io/script/parallax.html"
+                sandbox="allow-scripts"
+              ></iframe>
+              <button
+                type="button"
+                class="md_open_btn"
+                aria-haspopup="dialog"
+                title="대화상자"
+                data-href="#ap4_md7"
+              >
+                자세히 보기
+              </button>
+            </li>
+          </ul>
+
+          <div class="arrow_box">
+            <button type="button" class="left">
+              <i class="fas fa-arrow-alt-circle-left"></i>
+            </button>
+            <button type="button" class="right">
+              <i class="fas fa-arrow-alt-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 마지막 패널5 컨텍트 CONTACT -->
+      <h2 class="tit last_tit" id="lastTit">
+        <button
+          type="button"
+          id="aH5"
+          class="a_header last"
+          aria-controls="aP5"
+          aria-expanded="false"
+        >
+          CONTACT
+        </button>
+      </h2>
+      <div aria-labelledby="aH5" id="aP5" class="a_panel" data-tgColor="yellow">
+        <div class="container">
+          <img
+            class="link shadow"
+            src="images/main/link-solid_black.svg"
+            alt="링크 아이콘 그림자"
+          />
+          <img
+            class="link front"
+            src="images/main/link-solid_black.svg"
+            alt="링크 아이콘"
+          />
+
+          <div class="cnt">
+            <div class="light">
+              <img
+                src="images/common/electric_bulb_light.png"
+                alt="불이 켜진 전구"
+              />
+            </div>
+            <div class="txt_box default_c">
+              <strong>KIM SEON HUI</strong>
+              <p>
+                27a@kakao.com<br />
+                010. 4326. 3230
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 패널1 모달 -> 짝꿍 html 118번 줄 -->
+      <!-- <div id="dim"></div> 동적생성-->
+      <div
+        class="cnt0 circle txt_wrap"
+        id="no1"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="no1Name"
+      >
+        <div class="txt_inner">
+          <h4 id="no1Name">김디브</h4>
+          <strong>(부캐 No.1)</strong>
+          <p>
+            본캐의 영혼의 동반자. 지금은 코딩주니어지만 프론트엔드가 될 거라는
+            큰그림을 그리고 있다. <br />
+            배울수록 더 공부할 게 많아서 매우 즐거워 한다.
+          </p>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="cnt0 circle txt_wrap"
+        id="no2"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="no2Name"
+      >
+        <div class="txt_inner">
+          <h4 id="no2Name">김가구</h4>
+          <strong>(부캐 No.2)</strong>
+          <p>
+            따라 라라라~ 러브하우스를 보고 건축,인테리어 분야에 반해서 가구
+            설계를 하는 디자이너가 되었다 예쁜 인테리어, 가구 보는게 즐겁다
+            캐릭터중 가장 사회생활을 해본 캐릭터
+          </p>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="cnt0 circle txt_wrap"
+        id="no3"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="no3Name"
+      >
+        <div class="txt_inner">
+          <h4 id="no3Name">김탁구</h4>
+          <strong>(부캐 No.3)</strong>
+          <p>
+            제과,제빵에 흥미를 가지고 있다. 만들어서 선물하는 것을 좋아한다.
+            취미를 넘어 취업까지! 취업을 넘어 다시 취미로 돌아왔다.
+            <br />깨달음을 얻은 캐릭터
+          </p>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="cnt0 circle txt_wrap"
+        id="no4"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="no4Name"
+      >
+        <div class="txt_inner">
+          <h4 id="no4Name">김영웅</h4>
+          <strong>(부캐 No.4)</strong>
+          <p>
+            아이언맨3를 처음 보고 2, 1을 역주행한 특이 케이스. 그 후로 마블과
+            히어로 영화를 좋아하게 된다. 히어로 능력을 갖고 싶어 한다.
+          </p>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+
+      <!-- 패널4 모달 -> 짝꿍 html 423번 줄-->
+      <div
+        class="panel4_md"
+        id="ap4_md1"
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="ap4_md1_tit"
+      >
+        <div class="txt_box">
+          <h5 id="ap4_md1_tit" class="title">
+            활용도가 높은 요소들을 CSS animation 으로 제작했습니다.
+          </h5>
+          <p class="txt">
+            <span class="le1">loading : </span>원형 자식을 부모로 감싼 후
+            rotate로(360deg) 부모를 회전
+            <br />
+            <span class="le2">closeBtn : </span>중앙에 라인을 만들고 가상요소로
+            위,아래 라인을 만들어서 rotate로(45deg) 회전
+            <br />
+            <span class="le3">search : </span>가로 길이를 늘려 키워드 입력창을
+            주었고, 검색 하기 버튼도 시간에 맞춰 투명도를 제어 <br />
+            <span>button1 : </span>버튼에 가상요소로 배경을 만들어서
+            margin-top값 제어 <br />
+            <span>button2 : </span>click텍스트 숨김처리 후 border-radius:값을
+            제어와 숨겨뒀던 텍스트를 보이게 하고, button 숨김 처리 <br />
+            <span>button3 : </span>버튼요소와 자식요소에 각각 가상요소 2개씩, 총
+            4개를 만들어서 배치하고 각각 animation-delay 를 제어
+          </p>
+        </div>
+        <div class="cnt_box">
+          <iframe
+            src="https://sh-29.github.io/script/all_ani.html"
+            sandbox="allow-scripts"
+          ></iframe>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="panel4_md"
+        id="ap4_md2"
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="ap4_md2_tit"
+      >
+        <div class="txt_box">
+          <h5 id="ap4_md2_tit" class="title">텍스트 애니메이션</h5>
+          <p class="txt">
+            1) text-stroke를 활용해서 텍스트의 테두리만 남기고 면을 지움 <br />
+            2) 가상요소를 위와 똑같게 만든후 <br />
+            3) 마우스 진입시 글자가 채워지도록 animation에서 inset()을 활용해서
+            우측을 100% -> 0% <br />
+            4) 나올때는 반대로 좌측을 100% -> 0%로 두개의 animation으로 제작
+            <br />
+          </p>
+        </div>
+        <div class="cnt_box">
+          <iframe
+            src="https://sh-29.github.io/script/textstroke.html"
+            sandbox="allow-scripts"
+          ></iframe>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="panel4_md"
+        id="ap4_md3"
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="ap4_md3_tit"
+      >
+        <div class="txt_box">
+          <h5 id="ap4_md3_tit" class="title">제이쿼리로 미니게임 만들기</h5>
+          <p class="txt">
+            속성을 가지고 있는지를 true 또는 false로 반환해주는 is()메서드,
+            <br />
+            조건을 만족할경우와 아닌 경우 실행문을 제어 할 수 있는 조건문 if()를
+            활용 <br />
+            1) 보물로 정한 element에 클래스를 주고 is()로 주어진 클래스가 있는지
+            구함 <br />
+            2) if()로 있을 때와 없을 때를 제어.
+          </p>
+        </div>
+        <div class="cnt_box">
+          <iframe
+            src="https://sh-29.github.io/script/find.html"
+            sandbox="allow-scripts"
+          ></iframe>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="panel4_md"
+        id="ap4_md4"
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="ap4_md4_tit"
+      >
+        <div class="txt_box">
+          <h5 id="ap4_md4_tit" class="title">
+            자바스크립트로 디지털 시계만들기
+          </h5>
+          <p class="txt">
+            1) 날짜 객체 new Date()로 년/월/일/요일/시/분/초 반환 <br />
+            2) 숫자로 반환되는 요일을 문자로 변환, 12시가 넘으면 오후로, 0시는
+            12시로 변경 <br />
+            3) 시,분,초에서 한자리일 경우 '0'을 추가하여 두자리로 변경후 1~3
+            정리한 값 변수에 담기 <br />
+            4) 선택자.inerHTML을 활용해 값을 html 안에 대입 <br />
+            5) 1~4 값을 함수에 담고 setInterval()을 활용해 1초 마다 함수 실행
+          </p>
+        </div>
+        <div class="cnt_box">
+          <iframe
+            src="https://sh-29.github.io/script/clock2.html"
+            sandbox="allow-scripts"
+          ></iframe>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="panel4_md"
+        id="ap4_md5"
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="ap4_md5_tit"
+      >
+        <div class="txt_box">
+          <h5 id="ap4_md5_tit" class="title">
+            svg로 사진스케치 애니메이션 만들기
+          </h5>
+          <p class="txt">
+            1) 일러스트로 라인그려서 svg코드 생성 후 html로 이동<br />
+            2) stroke-dasharray로 전체 길이와 반복길이 동일하게 한번만 설정
+            <br />
+            3) stroke-dashoffset으로 시작점을 전체길이가 끝나는 지점. 숨겨져
+            안보이는 지점으로 설정 <br />
+            4) animation을 활용해 stroke-dashoffset으로 시작점을 0으로, 숨겨진
+            사진 보이게 처리
+          </p>
+        </div>
+        <div class="cnt_box">
+          <iframe
+            src="https://sh-29.github.io/script/svg.html"
+            sandbox="allow-scripts"
+          ></iframe>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="panel4_md"
+        id="ap4_md6"
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="ap4_md6_tit"
+      >
+        <div class="txt_box">
+          <h5 id="ap4_md6_tit" class="title">
+            setInterval와 animation, left값 변경으로 자동으로 움직이는 슬라이드
+          </h5>
+          <p class="txt">
+            접근성 - aria-hidden : 보이는 슬라이드만 읽히도록, aria-live : 재생
+            polite <small>(하던 작업하고 변경 사항 읽어줌)</small>, 정지
+            off<small>(읽지 않음)</small>
+            <br />
+            1) 전체 부모에 role="region" 으로 범위 역할 지정. 어떤 범위인지
+            aria-roledescription="carousel"로 슬라이드 통틀어 범위 지정 <br />
+            2) 슬라이더 개별로 role="grop" 그룹 역할 지정. 어떤 그룹인지
+            aria-roledescription="slide"로 슬라이더 범위라고 지정
+            <br />
+            3) 페이지네이션, 이전, 다음 버튼들에 aria-controls 지정 <br />
+            페이지네이션 : role="grop"를 가진 슬라이드 개별 아이템 / 이전,다음 :
+            role="grop"를 가진 슬라이드의 부모. 4)모든요소에 aria-label로 제목
+            지정 <br />
+          </p>
+        </div>
+        <div class="cnt_box">
+          <iframe
+            src="https://sh-29.github.io/script/autoslide/index1.html"
+            sandbox="allow-scripts"
+          ></iframe>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <div
+        class="panel4_md"
+        id="ap4_md7"
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="ap4_md7_tit"
+      >
+        <div class="txt_box">
+          <h5 id="ap4_md7_tit" class="title">
+            스크롤 이벤트를 활용해서 parallax Scrolling
+          </h5>
+          <p class="txt">
+            1)초기화면 opacity 0, translate로 위치 제어, 스크롤 했을 때 가지는
+            클래스로 미리 위치 제어 <br />
+            2)addClass로 정해둔 클래스 추가해서 위치 제어 <br />
+            3)각 요소의 offset().top 값을 구하고 <br />
+            4)if()조건문을 활용해 scrollTop()값이 각 요소의 offset().top 값보다
+            크면 정해둔 클래스 추가 <br />
+            5)빨리 스크롤 하는 사용자를 위해, scrollTop()값에 일정 수치 더해서
+            빨리지나가서 못보는 일 없도록 제어 <br />
+          </p>
+        </div>
+        <div class="cnt_box">
+          <iframe
+            src="https://sh-29.github.io/script/parallax.html"
+            sandbox="allow-scripts"
+          ></iframe>
+        </div>
+        <button type="button" class="md_close_btn">
+          <img src="images/common/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

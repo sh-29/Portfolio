@@ -492,8 +492,7 @@
       height: vw1920(310);
       opacity: 0.8;
     }
-    .js,
-    .vue {
+    .js {
       width: vw1920(240);
       height: vw1920(240);
       opacity: 0.7;
@@ -502,6 +501,11 @@
       width: vw1920(260);
       height: vw1920(260);
       opacity: 0.75;
+    }
+    .adobe {
+      width: vw1920(330);
+      height: vw1920(330);
+      opacity: 0.9;
     }
   }
 }
@@ -547,7 +551,7 @@
           text-indent: vw1920(106);
         }
         &.tg_js,
-        &.tg_vue {
+        &.tg_adobe {
           text-indent: vw1920(80);
         }
         &.tg_jq {
@@ -596,8 +600,8 @@
       input:checked + label.tg_sass {
         background: linear-gradient(90deg, #cf649a, #ff207d);
       }
-      input:checked + label.tg_vue {
-        background: linear-gradient(90deg, #41b883, #35495e);
+      input:checked + label.tg_adobe {
+        background: linear-gradient(90deg, #3b0101, #000000);
       }
     }
   }
@@ -723,6 +727,7 @@
             top: vw1920(380);
           }
         }
+        #txt5,
         #txt6,
         #txt7 {
           .more_btn {
