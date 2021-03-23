@@ -595,10 +595,10 @@
             font-size: 0.9375vw;
             font-style: normal; }
         #aP3 .slide_view .slide_wrap .slide #txt2 .more_btn {
-          position: absolute;
           top: 19.7916666667vw; }
-        #aP3 .slide_view .slide_wrap .slide #txt6 .more_btn,
-        #aP3 .slide_view .slide_wrap .slide #txt7 .more_btn {
+        #aP3 .slide_view .slide_wrap .slide #txt5 .more_btn {
+          top: 13.0208333333vw; }
+        #aP3 .slide_view .slide_wrap .slide #txt6 .more_btn {
           display: none; }
         #aP3 .slide_view .slide_wrap .slide #txt3 .more_cnt {
           letter-spacing: -0.0260416667vw; }

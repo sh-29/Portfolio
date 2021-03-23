@@ -717,14 +717,13 @@
             font-style: normal;
           }
         }
-        #txt2 {
-          .more_btn {
-            position: absolute;
-            top: vw1920(380);
-          }
+        #txt2 .more_btn {
+          top: vw1920(380);
         }
-        #txt6,
-        #txt7 {
+        #txt5 .more_btn {
+          top: vw1920(250);
+        }
+        #txt6 {
           .more_btn {
             display: none;
           }
