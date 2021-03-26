@@ -7,10 +7,10 @@ $(document).ready(function(){
   var tit = new Array(6);
   tit[0] = 'html';
   tit[1] = 'css';
-  tit[2] = 'sass';
-  tit[3] = 'script';
-  tit[4] = 'jQuery';
-  tit[5] = 'ps&ai';
+  tit[2] = 'script';
+  tit[3] = 'jQuery';
+  tit[4] = 'Ps';
+  tit[5] = 'Ai';
 
   _toggle.find('.tg').on('click',function () {
     var toggleidx = $(this).closest('.toggle_list').index();

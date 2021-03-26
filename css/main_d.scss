@@ -497,12 +497,12 @@
       height: vw1920(240);
       opacity: 0.7;
     }
-    .sass {
+    .ps {
       width: vw1920(260);
       height: vw1920(260);
       opacity: 0.75;
     }
-    .adobe {
+    .ai {
       width: vw1920(330);
       height: vw1920(330);
       opacity: 0.9;
@@ -550,8 +550,7 @@
         &.tg_css {
           text-indent: vw1920(106);
         }
-        &.tg_js,
-        &.tg_adobe {
+        &.tg_js {
           text-indent: vw1920(80);
         }
         &.tg_jq {
@@ -587,7 +586,7 @@
         background: linear-gradient(90deg, #e54d26, #ff0800);
       }
       input:checked + label.tg_css {
-        background: linear-gradient(90deg, #0b74b8, #0044ff);
+        background: linear-gradient(90deg, #34a4ff, #0182d8);
       }
       input:checked + label.tg_js {
         background: linear-gradient(90deg, #dab92c, #977b00);
@@ -597,11 +596,11 @@
         background: linear-gradient(90deg, #fff, #999);
         color: #333;
       }
-      input:checked + label.tg_sass {
-        background: linear-gradient(90deg, #cf649a, #ff207d);
+      input:checked + label.tg_ps {
+        background: linear-gradient(90deg, #31a8ff, #001e36);
       }
-      input:checked + label.tg_adobe {
-        background: linear-gradient(90deg, #3b0101, #000000);
+      input:checked + label.tg_ai {
+        background: linear-gradient(90deg, #ff9a00, #330000);
       }
     }
   }

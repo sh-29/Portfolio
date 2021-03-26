@@ -411,11 +411,11 @@
     width: 12.5vw;
     height: 12.5vw;
     opacity: 0.7; }
-  #aP2 .img_box li .sass {
+  #aP2 .img_box li .ps {
     width: 13.5416666667vw;
     height: 13.5416666667vw;
     opacity: 0.75; }
-  #aP2 .img_box li .adobe {
+  #aP2 .img_box li .ai {
     width: 17.1875vw;
     height: 17.1875vw;
     opacity: 0.9; }
@@ -456,7 +456,7 @@
       cursor: pointer; }
       #aP2 .toggle_box .cnt .toggle label.tg_css {
         text-indent: 5.5208333333vw; }
-      #aP2 .toggle_box .cnt .toggle label.tg_js, #aP2 .toggle_box .cnt .toggle label.tg_adobe {
+      #aP2 .toggle_box .cnt .toggle label.tg_js {
         text-indent: 4.1666666667vw; }
       #aP2 .toggle_box .cnt .toggle label.tg_jq {
         text-indent: 3.8541666667vw; }
@@ -487,17 +487,17 @@
     #aP2 .toggle_box .cnt .toggle input:checked + label.tg_html {
       background: linear-gradient(90deg, #e54d26, #ff0800); }
     #aP2 .toggle_box .cnt .toggle input:checked + label.tg_css {
-      background: linear-gradient(90deg, #0b74b8, #0044ff); }
+      background: linear-gradient(90deg, #34a4ff, #0182d8); }
     #aP2 .toggle_box .cnt .toggle input:checked + label.tg_js {
       background: linear-gradient(90deg, #dab92c, #977b00);
       color: #333; }
     #aP2 .toggle_box .cnt .toggle input:checked + label.tg_jq {
       background: linear-gradient(90deg, #fff, #999);
       color: #333; }
-    #aP2 .toggle_box .cnt .toggle input:checked + label.tg_sass {
-      background: linear-gradient(90deg, #cf649a, #ff207d); }
-    #aP2 .toggle_box .cnt .toggle input:checked + label.tg_adobe {
-      background: linear-gradient(90deg, #3b0101, #000000); }
+    #aP2 .toggle_box .cnt .toggle input:checked + label.tg_ps {
+      background: linear-gradient(90deg, #31a8ff, #001e36); }
+    #aP2 .toggle_box .cnt .toggle input:checked + label.tg_ai {
+      background: linear-gradient(90deg, #ff9a00, #330000); }
 
 #aP3 {
   position: relative; }

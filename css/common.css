@@ -93,7 +93,8 @@ button {
     display: none; }
     #cursor_follow p .fas,
     #cursor_follow p span {
-      color: #3664e8; }
+      color: #3664e8;
+      font-weight: bold; }
     #cursor_follow p.block {
       display: block; }
 
